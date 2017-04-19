@@ -22,4 +22,12 @@ class Events extends Admin
     public function recycle(){
         return view('recycle');
     }
+
+    public function edit(){
+        return view('edit');
+    }
+
+    public function update(){
+
+    }
 }
