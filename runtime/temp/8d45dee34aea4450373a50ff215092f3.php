@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:70:"C:\wamp64\www\0\auth\public/../application/admin\view\index\slide.html";i:1492587754;s:69:"C:\wamp64\www\0\auth\public/../application/admin\view\admin\base.html";i:1492586425;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:70:"C:\wamp64\www\0\auth\public/../application/admin\view\about\honor.html";i:1492505309;s:69:"C:\wamp64\www\0\auth\public/../application/admin\view\admin\base.html";i:1492588203;}*/ ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -16,7 +16,8 @@
     <!-- GOOGLE FONTS-->
     <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />-->
     
-<link href="__STATIC__/admin/assets/css/prettyPhoto.css" rel="stylesheet" />
+<!-- PAGE LEVEL STYLES -->
+<link href="__STATIC__/admin/assets/css/bootstrap-fileupload.min.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -71,7 +72,7 @@
                             <a href="<?php echo url('admin/about/honor'); ?>"><i class="fa fa-key "></i>公司荣誉</a>
                         </li>
                         <li>
-                            <a href=""><i class="fa fa-send "></i>公司客户</a>
+                            <a href="<?php echo url('admin/about/clients'); ?>"><i class="fa fa-send "></i>公司客户</a>
                         </li>
                     </ul>
                 </li>
@@ -128,19 +129,21 @@
     <div id="page-inner">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="page-head-line">首页轮播图管理</h1>
+                <h1 class="page-head-line">公司荣誉</h1>
                 <h1 class="page-subhead-line">This is dummy text , you can replace it with your original text. </h1>
+
             </div>
         </div>
         <!-- /. ROW  -->
         <div class="row">
             <div class="col-md-12">
                 <p>
-                    <a class="btn btn-primary" href="<?php echo url('admin/index/editslide'); ?>"><i class="glyphicon glyphicon-search"></i>新增</a>
+                    <button class="btn btn-primary"><i class="glyphicon glyphicon-search"></i>新增</button>
                 </p>
             </div>
         </div>
         <div class="row">
+
             <div class="col-md-12">
                 <!--   Kitchen Sink -->
                 <div class="panel panel-default">
@@ -153,55 +156,45 @@
                                 <thead>
                                 <tr>
                                     <th class="text-center">排序</th>
-                                    <th class="text-center">图片</th>
-                                    <th class="text-center">发布时日期</th>
+                                    <th class="text-center">中文名称</th>
+                                    <th class="text-center">英文名称</th>
+                                    <th class="text-center">产品数量</th>
                                     <th class="text-center">操作</th>
+
                                 </tr>
                                 </thead>
                                 <tbody class="text-center">
                                 <tr>
                                     <td>1</td>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
                                     <td>
-                                        <div class="col-md-4 col-md-offset-4">
-                                            <div class="portfolio-item awesome mix_all" data-cat="awesome" >
-                                                <a class="preview" title="Image Title Here" href="__STATIC__/admin/assets/img/portfolio/g.jpg"><img src="__STATIC__/admin/assets/img/portfolio/g.jpg" class="img-responsive " alt="" /></a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td style="vertical-align: middle;">2017-04-18 16:14</td>
-                                    <td style="vertical-align: middle;">
-                                        <a class="btn btn-primary btn-xs" href="<?php echo url('admin/index/editslide'); ?>"><i class="glyphicon glyphicon-search"></i>Edit</a>
-                                        <a class="btn btn-danger btn-xs" href="<?php echo url('admin/index/delslide'); ?>"><i class="glyphicon glyphicon-home"></i>Delete</a>
+                                        <button class="btn"><i class="glyphicon glyphicon-headphones"></i>View</button>
+                                        <button class="btn btn-primary"><i class="glyphicon glyphicon-search"></i>Edit</button>
+                                        <button class="btn btn-danger"><i class="glyphicon glyphicon-home"></i>Delete</button>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
                                     <td>
-                                        <div class="col-md-4 col-md-offset-4">
-                                            <div class="portfolio-item awesome mix_all" data-cat="awesome" >
-                                                <a class="preview" title="Image Title Here" href="__STATIC__/admin/assets/img/portfolio/g.jpg"><img src="__STATIC__/admin/assets/img/portfolio/g.jpg" class="img-responsive " alt="" /></a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td style="vertical-align: middle;">2017-04-18 16:14</td>
-                                    <td style="vertical-align: middle;">
-                                        <a class="btn btn-primary btn-xs" href="<?php echo url('admin/index/editslide'); ?>"><i class="glyphicon glyphicon-search"></i>Edit</a>
-                                        <a class="btn btn-danger btn-xs" href="<?php echo url('admin/index/delslide'); ?>"><i class="glyphicon glyphicon-home"></i>Delete</a>
+                                        <button class="btn"><i class="glyphicon glyphicon-headphones"></i>View</button>
+                                        <button class="btn btn-primary"><i class="glyphicon glyphicon-search"></i>Edit</button>
+                                        <button class="btn btn-danger"><i class="glyphicon glyphicon-home"></i>Delete</button>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
                                     <td>
-                                        <div class="col-md-4 col-md-offset-4">
-                                            <div class="portfolio-item awesome mix_all" data-cat="awesome" >
-                                                <a class="preview" title="Image Title Here" href="__STATIC__/admin/assets/img/portfolio/g.jpg"><img src="__STATIC__/admin/assets/img/portfolio/g.jpg" class="img-responsive " alt="" /></a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td style="vertical-align: middle;">2017-04-18 16:14</td>
-                                    <td style="vertical-align: middle;">
-                                        <a class="btn btn-primary btn-xs" href="<?php echo url('admin/index/editslide'); ?>"><i class="glyphicon glyphicon-search"></i>Edit</a>
-                                        <a class="btn btn-danger btn-xs" href="<?php echo url('admin/index/delslide'); ?>"><i class="glyphicon glyphicon-home"></i>Delete</a>
+                                        <button class="btn"><i class="glyphicon glyphicon-headphones"></i>View</button>
+                                        <button class="btn btn-primary"><i class="glyphicon glyphicon-search"></i>Edit</button>
+                                        <button class="btn btn-danger"><i class="glyphicon glyphicon-home"></i>Delete</button>
                                     </td>
                                 </tr>
                                 </tbody>
@@ -213,6 +206,19 @@
             </div>
         </div>
         <!-- /. ROW  -->
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="pagination">
+                    <li><a href="#">&laquo;</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
     <!-- /. PAGE INNER  -->
 </div>
@@ -234,10 +240,6 @@
 <script src="__STATIC__/admin/assets/js/wizard/jquery.steps.js"></script>
 <!-- CUSTOM SCRIPTS -->
 <script src="__STATIC__/admin/assets/js/custom.js"></script>
-
-<script src="__STATIC__/admin/assets/js/jquery.mixitup.min.js"></script>
-<script src="__STATIC__/admin/assets/js/jquery.prettyPhoto.js"></script>
-<script src="__STATIC__/admin/assets/js/galleryCustom.js"></script>
 
 </body>
 </html>

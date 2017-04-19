@@ -3100,3 +3100,3079 @@
 [ info ] [ LOG ] INIT File
 
 ---------------------------------------------------------------
+[ 2017-04-19T15:13:15+08:00 ] ::1 ::1 GET /static/admin/assets/css/bootstrap.css.map
+[ log ] local.auth.com/static/admin/assets/css/bootstrap.css.map [运行时间：0.102011s][吞吐率：9.80req/s] [内存消耗：2,524.86kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:13:59+08:00 ] ::1 ::1 GET /admin/index/index.html
+[ log ] local.auth.com/admin/index/index.html [运行时间：0.108044s][吞吐率：9.26req/s] [内存消耗：3,453.94kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/events/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:13:59+08:00 ] ::1 ::1 GET /static/admin/assets/css/bootstrap.css.map
+[ log ] local.auth.com/static/admin/assets/css/bootstrap.css.map [运行时间：0.082901s][吞吐率：12.06req/s] [内存消耗：2,524.86kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:20:29+08:00 ] ::1 ::1 GET /admin/index/index.html
+[ log ] local.auth.com/admin/index/index.html [运行时间：0.077963s][吞吐率：12.83req/s] [内存消耗：3,453.94kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/events/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:20:30+08:00 ] ::1 ::1 GET /static/admin/assets/css/bootstrap.css.map
+[ log ] local.auth.com/static/admin/assets/css/bootstrap.css.map [运行时间：0.059041s][吞吐率：16.94req/s] [内存消耗：2,524.86kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:20:55+08:00 ] ::1 ::1 GET /admin/index/slide.html
+[ log ] local.auth.com/admin/index/slide.html [运行时间：0.077801s][吞吐率：12.85req/s] [内存消耗：3,390.91kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'slide',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->slide[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\slide.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:21:00+08:00 ] ::1 ::1 GET /admin/index/slide.html
+[ log ] local.auth.com/admin/index/slide.html [运行时间：0.076608s][吞吐率：13.05req/s] [内存消耗：3,107.98kb] [文件加载：48]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'slide',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/slide.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->slide[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\slide.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:21:02+08:00 ] ::1 ::1 GET /admin/category/index.html
+[ log ] local.auth.com/admin/category/index.html [运行时间：0.078824s][吞吐率：12.69req/s] [内存消耗：3,376.61kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/slide.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ C:\wamp64\www\0\auth\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\category\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:21:15+08:00 ] ::1 ::1 GET /admin/category/index.html
+[ log ] local.auth.com/admin/category/index.html [运行时间：0.070228s][吞吐率：14.24req/s] [内存消耗：3,108.43kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp64\www\0\auth\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'accept-language' => 'zh-Hans-CN,zh-Hans;q=0.8,en-US;q=0.5,en;q=0.3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14393',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'local.auth.com',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ C:\wamp64\www\0\auth\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\category\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:21:24+08:00 ] ::1 ::1 GET /admin/category/index.html
+[ log ] local.auth.com/admin/category/index.html [运行时间：0.127359s][吞吐率：7.85req/s] [内存消耗：3,108.48kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp64\www\0\auth\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'accept-language' => 'zh-Hans-CN,zh-Hans;q=0.8,en-US;q=0.5,en;q=0.3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'local.auth.com',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ C:\wamp64\www\0\auth\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\category\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:21:33+08:00 ] ::1 ::1 GET /admin/category/index.html
+[ log ] local.auth.com/admin/category/index.html [运行时间：0.077857s][吞吐率：12.84req/s] [内存消耗：3,108.10kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp64\www\0\auth\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'image/gif, image/jpeg, image/pjpeg, application/x-ms-application, application/xaml+xml, application/x-ms-xbap, */*',
+  'accept-language' => 'zh-Hans-CN,zh-Hans;q=0.8,en-US;q=0.5,en;q=0.3',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; InfoPath.3)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'local.auth.com',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'think_var=zh-hans-cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ C:\wamp64\www\0\auth\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\category\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:21:40+08:00 ] ::1 ::1 GET /admin/category/index.html
+[ log ] local.auth.com/admin/category/index.html [运行时间：0.159347s][吞吐率：6.28req/s] [内存消耗：3,107.80kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp64\www\0\auth\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'accept-language' => 'zh-Hans-CN,zh-Hans;q=0.8,en-US;q=0.5,en;q=0.3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'local.auth.com',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'think_var=zh-hans-cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ C:\wamp64\www\0\auth\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\category\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:21:47+08:00 ] ::1 ::1 GET /admin/category/index.html
+[ log ] local.auth.com/admin/category/index.html [运行时间：0.072290s][吞吐率：13.83req/s] [内存消耗：3,108.59kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp64\www\0\auth\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8',
+  'cookie' => 'think_var=zh-hans-cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ C:\wamp64\www\0\auth\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\category\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:21:51+08:00 ] ::1 ::1 GET /admin/category/index.html
+[ log ] local.auth.com/admin/category/index.html [运行时间：0.066326s][吞吐率：15.08req/s] [内存消耗：3,107.77kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp64\www\0\auth\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'accept-language' => 'zh-Hans-CN,zh-Hans;q=0.8,en-US;q=0.5,en;q=0.3',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; InfoPath.3)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'local.auth.com',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'think_var=zh-hans-cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ C:\wamp64\www\0\auth\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\category\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:22:00+08:00 ] ::1 ::1 GET /static/admin/assets/css/bootstrap.css.map
+[ log ] local.auth.com/static/admin/assets/css/bootstrap.css.map [运行时间：0.120287s][吞吐率：8.31req/s] [内存消耗：2,536.02kb] [文件加载：41]
+[ info ] [ LANG ] C:\wamp64\www\0\auth\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'accept-language' => 'zh-Hans-CN,zh-Hans;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; InfoPath.3)',
+  'host' => 'local.auth.com',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'think_var=zh-hans-cn',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:22:02+08:00 ] ::1 ::1 GET /admin/category/index.html
+[ log ] local.auth.com/admin/category/index.html [运行时间：0.085045s][吞吐率：11.76req/s] [内存消耗：3,108.10kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp64\www\0\auth\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'image/gif, image/jpeg, image/pjpeg, application/x-ms-application, application/xaml+xml, application/x-ms-xbap, */*',
+  'accept-language' => 'zh-Hans-CN,zh-Hans;q=0.8,en-US;q=0.5,en;q=0.3',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; InfoPath.3)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'local.auth.com',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'think_var=zh-hans-cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ C:\wamp64\www\0\auth\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\category\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:22:14+08:00 ] ::1 ::1 GET /admin/category/index.html
+[ log ] local.auth.com/admin/category/index.html [运行时间：0.064351s][吞吐率：15.54req/s] [内存消耗：3,108.59kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp64\www\0\auth\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8',
+  'cookie' => 'think_var=zh-hans-cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ C:\wamp64\www\0\auth\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\category\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:22:17+08:00 ] ::1 ::1 GET /admin/category/index.html
+[ log ] local.auth.com/admin/category/index.html [运行时间：0.076967s][吞吐率：12.99req/s] [内存消耗：3,107.77kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp64\www\0\auth\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'accept-language' => 'zh-Hans-CN,zh-Hans;q=0.8,en-US;q=0.5,en;q=0.3',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; InfoPath.3)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'local.auth.com',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'think_var=zh-hans-cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ C:\wamp64\www\0\auth\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\category\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:22:27+08:00 ] ::1 ::1 GET /admin/category/index.html
+[ log ] local.auth.com/admin/category/index.html [运行时间：0.102190s][吞吐率：9.79req/s] [内存消耗：3,108.59kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp64\www\0\auth\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8',
+  'cookie' => 'think_var=zh-hans-cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ C:\wamp64\www\0\auth\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\category\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:22:33+08:00 ] ::1 ::1 GET /admin/category/index.html
+[ log ] local.auth.com/admin/category/index.html [运行时间：0.102972s][吞吐率：9.71req/s] [内存消耗：3,107.77kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp64\www\0\auth\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'accept-language' => 'zh-Hans-CN,zh-Hans;q=0.8,en-US;q=0.5,en;q=0.3',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; InfoPath.3)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'local.auth.com',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'think_var=zh-hans-cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ C:\wamp64\www\0\auth\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\category\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:22:39+08:00 ] ::1 ::1 GET /admin/category/index.html
+[ log ] local.auth.com/admin/category/index.html [运行时间：0.066277s][吞吐率：15.09req/s] [内存消耗：3,108.59kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp64\www\0\auth\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8',
+  'cookie' => 'think_var=zh-hans-cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ C:\wamp64\www\0\auth\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\category\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:22:58+08:00 ] ::1 ::1 GET /admin/index/login
+[ log ] local.auth.com/admin/index/login [运行时间：0.065798s][吞吐率：15.20req/s] [内存消耗：3,257.91kb] [文件加载：50]
+[ info ] [ LANG ] C:\wamp64\www\0\auth\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8',
+  'cookie' => 'think_var=zh-hans-cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->login[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\admin\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:25:08+08:00 ] ::1 ::1 GET /admin/index/index.html
+[ log ] local.auth.com/admin/index/index.html [运行时间：0.086551s][吞吐率：11.55req/s] [内存消耗：3,123.92kb] [文件加载：48]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/category/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:25:09+08:00 ] ::1 ::1 GET /admin/index/slide.html
+[ log ] local.auth.com/admin/index/slide.html [运行时间：0.065244s][吞吐率：15.33req/s] [内存消耗：3,107.98kb] [文件加载：48]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'slide',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->slide[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\slide.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:25:14+08:00 ] ::1 ::1 GET /admin/index/slide.html
+[ log ] local.auth.com/admin/index/slide.html [运行时间：0.067120s][吞吐率：14.90req/s] [内存消耗：3,107.98kb] [文件加载：48]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'slide',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/slide.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->slide[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\slide.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:25:16+08:00 ] ::1 ::1 GET /admin/category/index.html
+[ log ] local.auth.com/admin/category/index.html [运行时间：0.066755s][吞吐率：14.98req/s] [内存消耗：3,097.98kb] [文件加载：48]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/slide.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ C:\wamp64\www\0\auth\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\category\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:25:18+08:00 ] ::1 ::1 GET /admin/events/index.html
+[ log ] local.auth.com/admin/events/index.html [运行时间：0.075009s][吞吐率：13.33req/s] [内存消耗：3,377.28kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'events',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/category/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Events->index[ C:\wamp64\www\0\auth\application\admin\controller\Events.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\events\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:25:21+08:00 ] ::1 ::1 GET /admin/index/index.html
+[ log ] local.auth.com/admin/index/index.html [运行时间：0.067326s][吞吐率：14.85req/s] [内存消耗：3,124.05kb] [文件加载：48]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/events/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:25:22+08:00 ] ::1 ::1 GET /admin/index/index.html
+[ log ] local.auth.com/admin/index/index.html [运行时间：0.063788s][吞吐率：15.68req/s] [内存消耗：3,124.05kb] [文件加载：48]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:26:38+08:00 ] ::1 ::1 GET /admin/index/index.html
+[ log ] local.auth.com/admin/index/index.html [运行时间：0.079289s][吞吐率：12.61req/s] [内存消耗：3,375.55kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:28:34+08:00 ] ::1 ::1 GET /admin/index/index.html
+[ log ] local.auth.com/admin/index/index.html [运行时间：0.087802s][吞吐率：11.39req/s] [内存消耗：3,375.85kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:29:07+08:00 ] ::1 ::1 GET /admin/index/index.html
+[ log ] local.auth.com/admin/index/index.html [运行时间：0.077105s][吞吐率：12.97req/s] [内存消耗：3,375.84kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:31:09+08:00 ] ::1 ::1 GET /admin/index/index.html
+[ log ] local.auth.com/admin/index/index.html [运行时间：0.090719s][吞吐率：11.02req/s] [内存消耗：3,375.84kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:31:53+08:00 ] ::1 ::1 GET /admin/index/index.html
+[ log ] local.auth.com/admin/index/index.html [运行时间：0.095961s][吞吐率：10.42req/s] [内存消耗：3,378.21kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:32:59+08:00 ] ::1 ::1 GET /admin/index/index.html
+[ log ] local.auth.com/admin/index/index.html [运行时间：0.097955s][吞吐率：10.21req/s] [内存消耗：3,376.39kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:33:50+08:00 ] ::1 ::1 GET /admin/index/index.html
+[ log ] local.auth.com/admin/index/index.html [运行时间：0.101233s][吞吐率：9.88req/s] [内存消耗：3,376.60kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:34:11+08:00 ] ::1 ::1 GET /admin/index/index.html
+[ log ] local.auth.com/admin/index/index.html [运行时间：0.095521s][吞吐率：10.47req/s] [内存消耗：3,108.16kb] [文件加载：48]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:34:13+08:00 ] ::1 ::1 GET /admin/index/index.html
+[ log ] local.auth.com/admin/index/index.html [运行时间：0.086385s][吞吐率：11.58req/s] [内存消耗：3,108.16kb] [文件加载：48]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:34:16+08:00 ] ::1 ::1 GET /static/admin/assets/css/bootstrap.css.map
+[ log ] local.auth.com/static/admin/assets/css/bootstrap.css.map [运行时间：0.081142s][吞吐率：12.32req/s] [内存消耗：2,524.86kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:35:05+08:00 ] ::1 ::1 GET /admin/index/index.html
+[ log ] local.auth.com/admin/index/index.html [运行时间：0.076003s][吞吐率：13.16req/s] [内存消耗：3,108.54kb] [文件加载：48]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:35:05+08:00 ] ::1 ::1 GET /static/admin/assets/css/bootstrap.css.map
+[ log ] local.auth.com/static/admin/assets/css/bootstrap.css.map [运行时间：0.068934s][吞吐率：14.51req/s] [内存消耗：2,524.86kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:35:13+08:00 ] ::1 ::1 GET /admin/index/index.html
+[ log ] local.auth.com/admin/index/index.html [运行时间：0.076597s][吞吐率：13.06req/s] [内存消耗：3,107.98kb] [文件加载：48]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:35:13+08:00 ] ::1 ::1 GET /static/admin/assets/css/bootstrap.css.map
+[ log ] local.auth.com/static/admin/assets/css/bootstrap.css.map [运行时间：0.066565s][吞吐率：15.02req/s] [内存消耗：2,524.86kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:35:35+08:00 ] ::1 ::1 GET /admin/index/index.html
+[ log ] local.auth.com/admin/index/index.html [运行时间：0.089538s][吞吐率：11.17req/s] [内存消耗：3,376.58kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:35:35+08:00 ] ::1 ::1 GET /static/admin/assets/css/bootstrap.css.map
+[ log ] local.auth.com/static/admin/assets/css/bootstrap.css.map [运行时间：0.067348s][吞吐率：14.85req/s] [内存消耗：2,524.86kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:35:45+08:00 ] ::1 ::1 GET /admin/index/index.html
+[ log ] local.auth.com/admin/index/index.html [运行时间：0.089393s][吞吐率：11.19req/s] [内存消耗：3,376.43kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:35:46+08:00 ] ::1 ::1 GET /static/admin/assets/css/bootstrap.css.map
+[ log ] local.auth.com/static/admin/assets/css/bootstrap.css.map [运行时间：0.075788s][吞吐率：13.19req/s] [内存消耗：2,524.86kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:35:56+08:00 ] ::1 ::1 GET /admin/index/index.html
+[ log ] local.auth.com/admin/index/index.html [运行时间：0.088019s][吞吐率：11.36req/s] [内存消耗：3,376.23kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:35:57+08:00 ] ::1 ::1 GET /static/admin/assets/css/bootstrap.css.map
+[ log ] local.auth.com/static/admin/assets/css/bootstrap.css.map [运行时间：0.074558s][吞吐率：13.41req/s] [内存消耗：2,524.86kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:36:00+08:00 ] ::1 ::1 GET /admin/index/index.html
+[ log ] local.auth.com/admin/index/index.html [运行时间：0.072944s][吞吐率：13.71req/s] [内存消耗：3,108.03kb] [文件加载：48]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:36:00+08:00 ] ::1 ::1 GET /static/admin/assets/css/bootstrap.css.map
+[ log ] local.auth.com/static/admin/assets/css/bootstrap.css.map [运行时间：0.075406s][吞吐率：13.26req/s] [内存消耗：2,524.86kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:36:03+08:00 ] ::1 ::1 GET /admin/index/index.html
+[ log ] local.auth.com/admin/index/index.html [运行时间：0.074432s][吞吐率：13.44req/s] [内存消耗：3,108.03kb] [文件加载：48]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:36:03+08:00 ] ::1 ::1 GET /static/admin/assets/css/bootstrap.css.map
+[ log ] local.auth.com/static/admin/assets/css/bootstrap.css.map [运行时间：0.068052s][吞吐率：14.69req/s] [内存消耗：2,524.86kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:36:05+08:00 ] ::1 ::1 GET /admin/index/slide.html
+[ log ] local.auth.com/admin/index/slide.html [运行时间：0.086555s][吞吐率：11.55req/s] [内存消耗：3,107.98kb] [文件加载：48]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'slide',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->slide[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\slide.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:36:05+08:00 ] ::1 ::1 GET /static/admin/assets/css/bootstrap.css.map
+[ log ] local.auth.com/static/admin/assets/css/bootstrap.css.map [运行时间：0.064389s][吞吐率：15.53req/s] [内存消耗：2,524.86kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:36:43+08:00 ] ::1 ::1 GET /admin/index/slide.html
+[ log ] local.auth.com/admin/index/slide.html [运行时间：0.103809s][吞吐率：9.63req/s] [内存消耗：3,391.63kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'slide',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->slide[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\slide.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:36:43+08:00 ] ::1 ::1 GET /static/admin/assets/css/bootstrap.css.map
+[ log ] local.auth.com/static/admin/assets/css/bootstrap.css.map [运行时间：0.065676s][吞吐率：15.23req/s] [内存消耗：2,524.86kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:37:19+08:00 ] ::1 ::1 GET /admin/index/slide.html
+[ log ] local.auth.com/admin/index/slide.html [运行时间：0.095073s][吞吐率：10.52req/s] [内存消耗：3,391.23kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'slide',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->slide[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\slide.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:37:20+08:00 ] ::1 ::1 GET /static/admin/assets/css/bootstrap.css.map
+[ log ] local.auth.com/static/admin/assets/css/bootstrap.css.map [运行时间：0.068960s][吞吐率：14.50req/s] [内存消耗：2,524.86kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:37:40+08:00 ] ::1 ::1 GET /admin/index/slide.html
+[ log ] local.auth.com/admin/index/slide.html [运行时间：0.080743s][吞吐率：12.38req/s] [内存消耗：3,391.38kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'slide',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->slide[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\slide.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:37:40+08:00 ] ::1 ::1 GET /static/admin/assets/css/bootstrap.css.map
+[ log ] local.auth.com/static/admin/assets/css/bootstrap.css.map [运行时间：0.062225s][吞吐率：16.07req/s] [内存消耗：2,524.86kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:39:46+08:00 ] ::1 ::1 GET /admin/index/slide.html
+[ log ] local.auth.com/admin/index/slide.html [运行时间：0.087053s][吞吐率：11.49req/s] [内存消耗：3,390.36kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'slide',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->slide[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\slide.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:40:15+08:00 ] ::1 ::1 GET /admin/index/slide.html
+[ log ] local.auth.com/admin/index/slide.html [运行时间：0.080939s][吞吐率：12.35req/s] [内存消耗：3,390.30kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'slide',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->slide[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\slide.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:40:25+08:00 ] ::1 ::1 GET /admin/index/slide.html
+[ log ] local.auth.com/admin/index/slide.html [运行时间：0.074117s][吞吐率：13.49req/s] [内存消耗：3,390.45kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'slide',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->slide[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\slide.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:40:44+08:00 ] ::1 ::1 GET /admin/index/slide.html
+[ log ] local.auth.com/admin/index/slide.html [运行时间：0.081015s][吞吐率：12.34req/s] [内存消耗：3,390.48kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'slide',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->slide[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\slide.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:41:06+08:00 ] ::1 ::1 GET /admin/index/slide.html
+[ log ] local.auth.com/admin/index/slide.html [运行时间：0.146037s][吞吐率：6.85req/s] [内存消耗：3,390.78kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'slide',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->slide[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\slide.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:41:12+08:00 ] ::1 ::1 GET /admin/index/editslide.html
+[ log ] local.auth.com/admin/index/editslide.html [运行时间：0.110835s][吞吐率：9.02req/s] [内存消耗：3,384.27kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'editslide',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/slide.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->editslide[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\editslide.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:42:22+08:00 ] ::1 ::1 GET /admin/index/slide.html
+[ log ] local.auth.com/admin/index/slide.html [运行时间：0.093964s][吞吐率：10.64req/s] [内存消耗：3,391.34kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'slide',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->slide[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\slide.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:42:24+08:00 ] ::1 ::1 GET /amdin/index/editslide.html
+[ log ] local.auth.com/amdin/index/editslide.html [运行时间：0.054895s][吞吐率：18.22req/s] [内存消耗：2,525.23kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'amdin',
+    1 => 'index',
+    2 => 'editslide',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/slide.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:42:35+08:00 ] ::1 ::1 GET /admin/index/slide.html
+[ log ] local.auth.com/admin/index/slide.html [运行时间：0.091283s][吞吐率：10.95req/s] [内存消耗：3,391.34kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'slide',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->slide[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\slide.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:42:37+08:00 ] ::1 ::1 GET /admin/index/editslide.html
+[ log ] local.auth.com/admin/index/editslide.html [运行时间：0.077645s][吞吐率：12.88req/s] [内存消耗：3,108.28kb] [文件加载：48]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'editslide',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/slide.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->editslide[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\editslide.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:42:44+08:00 ] ::1 ::1 GET /static/admin/assets/css/bootstrap.css.map
+[ log ] local.auth.com/static/admin/assets/css/bootstrap.css.map [运行时间：0.077834s][吞吐率：12.85req/s] [内存消耗：2,524.86kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:43:06+08:00 ] ::1 ::1 GET /admin/index/editslide.html
+[ log ] local.auth.com/admin/index/editslide.html [运行时间：0.092400s][吞吐率：10.82req/s] [内存消耗：3,384.37kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'editslide',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/slide.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->editslide[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\editslide.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:43:06+08:00 ] ::1 ::1 GET /static/admin/assets/css/bootstrap.css.map
+[ log ] local.auth.com/static/admin/assets/css/bootstrap.css.map [运行时间：0.065901s][吞吐率：15.17req/s] [内存消耗：2,524.86kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:43:15+08:00 ] ::1 ::1 GET /admin/index/editslide.html
+[ log ] local.auth.com/admin/index/editslide.html [运行时间：0.080802s][吞吐率：12.38req/s] [内存消耗：3,384.58kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'editslide',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/slide.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->editslide[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\editslide.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:43:16+08:00 ] ::1 ::1 GET /static/admin/assets/css/bootstrap.css.map
+[ log ] local.auth.com/static/admin/assets/css/bootstrap.css.map [运行时间：0.066708s][吞吐率：14.99req/s] [内存消耗：2,524.86kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:43:44+08:00 ] ::1 ::1 GET /admin/index/index.html
+[ log ] local.auth.com/admin/index/index.html [运行时间：0.071013s][吞吐率：14.08req/s] [内存消耗：3,108.34kb] [文件加载：48]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/editslide.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:43:45+08:00 ] ::1 ::1 GET /admin/index/slide.html
+[ log ] local.auth.com/admin/index/slide.html [运行时间：0.076050s][吞吐率：13.15req/s] [内存消耗：3,108.09kb] [文件加载：48]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'slide',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->slide[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\slide.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:43:49+08:00 ] ::1 ::1 GET /admin/index/slide.html
+[ log ] local.auth.com/admin/index/slide.html [运行时间：0.079415s][吞吐率：12.59req/s] [内存消耗：3,108.09kb] [文件加载：48]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'slide',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/slide.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->slide[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\slide.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:44:05+08:00 ] ::1 ::1 GET /admin/index/slide.html
+[ log ] local.auth.com/admin/index/slide.html [运行时间：0.073844s][吞吐率：13.54req/s] [内存消耗：3,108.09kb] [文件加载：48]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'slide',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/slide.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->slide[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\slide.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:44:08+08:00 ] ::1 ::1 GET /admin/category/index.html
+[ log ] local.auth.com/admin/category/index.html [运行时间：0.069089s][吞吐率：14.47req/s] [内存消耗：3,097.98kb] [文件加载：48]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/slide.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ C:\wamp64\www\0\auth\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\category\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:45:45+08:00 ] ::1 ::1 GET /admin/category/index.html
+[ log ] local.auth.com/admin/category/index.html [运行时间：0.085777s][吞吐率：11.66req/s] [内存消耗：3,376.55kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/slide.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ C:\wamp64\www\0\auth\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\category\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:45:46+08:00 ] ::1 ::1 GET /admin/category/edit.html
+[ log ] local.auth.com/admin/category/edit.html [运行时间：0.088862s][吞吐率：11.25req/s] [内存消耗：3,368.30kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/category/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Category->edit[ C:\wamp64\www\0\auth\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\category\edit.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:45:49+08:00 ] ::1 ::1 GET /admin/category/edit.html
+[ log ] local.auth.com/admin/category/edit.html [运行时间：0.067030s][吞吐率：14.92req/s] [内存消耗：3,097.91kb] [文件加载：48]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/category/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Category->edit[ C:\wamp64\www\0\auth\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\category\edit.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:46:21+08:00 ] ::1 ::1 GET /admin/category/edit.html
+[ log ] local.auth.com/admin/category/edit.html [运行时间：0.076194s][吞吐率：13.12req/s] [内存消耗：3,097.91kb] [文件加载：48]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/category/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Category->edit[ C:\wamp64\www\0\auth\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\category\edit.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:46:24+08:00 ] ::1 ::1 GET /admin/products/index.html
+[ log ] local.auth.com/admin/products/index.html [运行时间：0.081872s][吞吐率：12.21req/s] [内存消耗：3,411.77kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'products',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/category/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Products->index[ C:\wamp64\www\0\auth\application\admin\controller\Products.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\products\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:46:30+08:00 ] ::1 ::1 GET /admin/category/index.html
+[ log ] local.auth.com/admin/category/index.html [运行时间：0.082204s][吞吐率：12.16req/s] [内存消耗：3,376.09kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/products/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ C:\wamp64\www\0\auth\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\category\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:46:33+08:00 ] ::1 ::1 GET /admin/index/index.html
+[ log ] local.auth.com/admin/index/index.html [运行时间：0.097139s][吞吐率：10.29req/s] [内存消耗：3,107.96kb] [文件加载：48]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/category/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:46:35+08:00 ] ::1 ::1 GET /admin/index/slide.html
+[ log ] local.auth.com/admin/index/slide.html [运行时间：0.077144s][吞吐率：12.96req/s] [内存消耗：3,108.09kb] [文件加载：48]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'slide',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->slide[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\slide.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:46:39+08:00 ] ::1 ::1 GET /admin/index/slide.html
+[ log ] local.auth.com/admin/index/slide.html [运行时间：0.076183s][吞吐率：13.13req/s] [内存消耗：3,108.09kb] [文件加载：48]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'slide',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/slide.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->slide[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\slide.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:46:44+08:00 ] ::1 ::1 GET /admin/about/info.html
+[ log ] local.auth.com/admin/about/info.html [运行时间：0.074815s][吞吐率：13.37req/s] [内存消耗：3,359.78kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'about',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/index/slide.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\About->info[ C:\wamp64\www\0\auth\application\admin\controller\About.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\about\info.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:46:50+08:00 ] ::1 ::1 GET /admin/category/index.html
+[ log ] local.auth.com/admin/category/index.html [运行时间：0.079524s][吞吐率：12.57req/s] [内存消耗：3,097.97kb] [文件加载：48]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/about/info.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ C:\wamp64\www\0\auth\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\category\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:47:21+08:00 ] ::1 ::1 GET /admin/category/index.html
+[ log ] local.auth.com/admin/category/index.html [运行时间：0.086114s][吞吐率：11.61req/s] [内存消耗：3,376.05kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/about/info.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ C:\wamp64\www\0\auth\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\category\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:47:24+08:00 ] ::1 ::1 GET /admin/category/index.html
+[ log ] local.auth.com/admin/category/index.html [运行时间：0.077527s][吞吐率：12.90req/s] [内存消耗：3,097.90kb] [文件加载：48]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/about/info.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ C:\wamp64\www\0\auth\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\category\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:47:33+08:00 ] ::1 ::1 GET /static/admin/assets/css/bootstrap.css.map
+[ log ] local.auth.com/static/admin/assets/css/bootstrap.css.map [运行时间：0.100364s][吞吐率：9.96req/s] [内存消耗：2,524.86kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:47:55+08:00 ] ::1 ::1 GET /admin/category/index.html
+[ log ] local.auth.com/admin/category/index.html [运行时间：0.096435s][吞吐率：10.37req/s] [内存消耗：3,376.11kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/about/info.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ C:\wamp64\www\0\auth\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\category\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:48:08+08:00 ] ::1 ::1 GET /admin/about/info.html
+[ log ] local.auth.com/admin/about/info.html [运行时间：0.072008s][吞吐率：13.89req/s] [内存消耗：3,096.41kb] [文件加载：48]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'about',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/category/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\About->info[ C:\wamp64\www\0\auth\application\admin\controller\About.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\about\info.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:49:13+08:00 ] ::1 ::1 GET /admin/about/honor.html
+[ log ] local.auth.com/admin/about/honor.html [运行时间：0.075695s][吞吐率：13.21req/s] [内存消耗：3,376.20kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'about',
+    2 => 'honor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/about/info.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\About->honor[ C:\wamp64\www\0\auth\application\admin\controller\About.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\about\honor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:49:34+08:00 ] ::1 ::1 GET /admin/about/honor.html
+[ log ] local.auth.com/admin/about/honor.html [运行时间：0.069761s][吞吐率：14.33req/s] [内存消耗：3,097.99kb] [文件加载：48]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'about',
+    2 => 'honor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/about/info.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\About->honor[ C:\wamp64\www\0\auth\application\admin\controller\About.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\about\honor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:49:37+08:00 ] ::1 ::1 GET /admin/about/honor.html
+[ log ] local.auth.com/admin/about/honor.html [运行时间：0.068004s][吞吐率：14.70req/s] [内存消耗：3,097.75kb] [文件加载：48]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'about',
+    2 => 'honor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/about/honor.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\About->honor[ C:\wamp64\www\0\auth\application\admin\controller\About.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\about\honor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:50:11+08:00 ] ::1 ::1 GET /admin/about/honor.html
+[ log ] local.auth.com/admin/about/honor.html [运行时间：0.105251s][吞吐率：9.50req/s] [内存消耗：3,376.55kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'about',
+    2 => 'honor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/about/honor.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\About->honor[ C:\wamp64\www\0\auth\application\admin\controller\About.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\about\honor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:50:14+08:00 ] ::1 ::1 GET /admin/about/clients.html
+[ log ] local.auth.com/admin/about/clients.html [运行时间：0.079985s][吞吐率：12.50req/s] [内存消耗：3,376.29kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'about',
+    2 => 'clients',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/about/honor.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\About->clients[ C:\wamp64\www\0\auth\application\admin\controller\About.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\about\clients.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:51:05+08:00 ] ::1 ::1 GET /admin/about/clients.html
+[ log ] local.auth.com/admin/about/clients.html [运行时间：0.096326s][吞吐率：10.38req/s] [内存消耗：3,376.66kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'about',
+    2 => 'clients',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/about/honor.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\About->clients[ C:\wamp64\www\0\auth\application\admin\controller\About.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\about\clients.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:51:21+08:00 ] ::1 ::1 GET /admin/about/clients.html
+[ log ] local.auth.com/admin/about/clients.html [运行时间：0.088365s][吞吐率：11.32req/s] [内存消耗：3,376.66kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'about',
+    2 => 'clients',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/about/honor.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\About->clients[ C:\wamp64\www\0\auth\application\admin\controller\About.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\about\clients.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-19T15:52:34+08:00 ] ::1 ::1 GET /admin/about/clients.html
+[ log ] local.auth.com/admin/about/clients.html [运行时间：0.088702s][吞吐率：11.27req/s] [内存消耗：3,377.20kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'about',
+    2 => 'clients',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin/about/honor.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'pgv_pvi=9280915456; think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\About->clients[ C:\wamp64\www\0\auth\application\admin\controller\About.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\about\clients.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

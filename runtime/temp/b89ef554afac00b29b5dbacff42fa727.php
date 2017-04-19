@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:70:"C:\wamp64\www\0\auth\public/../application/admin\view\index\slide.html";i:1492587754;s:69:"C:\wamp64\www\0\auth\public/../application/admin\view\admin\base.html";i:1492586425;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:74:"C:\wamp64\www\0\auth\public/../application/admin\view\index\editslide.html";i:1492587793;s:69:"C:\wamp64\www\0\auth\public/../application/admin\view\admin\base.html";i:1492586425;}*/ ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -16,7 +16,8 @@
     <!-- GOOGLE FONTS-->
     <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />-->
     
-<link href="__STATIC__/admin/assets/css/prettyPhoto.css" rel="stylesheet" />
+<link href="__STATIC__/admin/assets/css/bootstrap-fileupload.min.css" rel="stylesheet" />
+<link href="__STATIC__/admin/assets/fileinput/css/fileinput.min.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -128,94 +129,53 @@
     <div id="page-inner">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="page-head-line">首页轮播图管理</h1>
+                <h1 class="page-head-line">编辑录播图》<small>新增|更新</small></h1>
                 <h1 class="page-subhead-line">This is dummy text , you can replace it with your original text. </h1>
             </div>
         </div>
-        <!-- /. ROW  -->
+        <!--/.ROW-->
         <div class="row">
-            <div class="col-md-12">
-                <p>
-                    <a class="btn btn-primary" href="<?php echo url('admin/index/editslide'); ?>"><i class="glyphicon glyphicon-search"></i>新增</a>
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <!--   Kitchen Sink -->
+            <div class="col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3 col-xs-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        Kitchen Sink
+                        编号：1
                     </div>
                     <div class="panel-body">
-                        <div class="table-responsive">
-                            <table class="table table-striped table-bordered table-hover">
-                                <thead>
-                                <tr>
-                                    <th class="text-center">排序</th>
-                                    <th class="text-center">图片</th>
-                                    <th class="text-center">发布时日期</th>
-                                    <th class="text-center">操作</th>
-                                </tr>
-                                </thead>
-                                <tbody class="text-center">
-                                <tr>
-                                    <td>1</td>
-                                    <td>
-                                        <div class="col-md-4 col-md-offset-4">
-                                            <div class="portfolio-item awesome mix_all" data-cat="awesome" >
-                                                <a class="preview" title="Image Title Here" href="__STATIC__/admin/assets/img/portfolio/g.jpg"><img src="__STATIC__/admin/assets/img/portfolio/g.jpg" class="img-responsive " alt="" /></a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td style="vertical-align: middle;">2017-04-18 16:14</td>
-                                    <td style="vertical-align: middle;">
-                                        <a class="btn btn-primary btn-xs" href="<?php echo url('admin/index/editslide'); ?>"><i class="glyphicon glyphicon-search"></i>Edit</a>
-                                        <a class="btn btn-danger btn-xs" href="<?php echo url('admin/index/delslide'); ?>"><i class="glyphicon glyphicon-home"></i>Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>
-                                        <div class="col-md-4 col-md-offset-4">
-                                            <div class="portfolio-item awesome mix_all" data-cat="awesome" >
-                                                <a class="preview" title="Image Title Here" href="__STATIC__/admin/assets/img/portfolio/g.jpg"><img src="__STATIC__/admin/assets/img/portfolio/g.jpg" class="img-responsive " alt="" /></a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td style="vertical-align: middle;">2017-04-18 16:14</td>
-                                    <td style="vertical-align: middle;">
-                                        <a class="btn btn-primary btn-xs" href="<?php echo url('admin/index/editslide'); ?>"><i class="glyphicon glyphicon-search"></i>Edit</a>
-                                        <a class="btn btn-danger btn-xs" href="<?php echo url('admin/index/delslide'); ?>"><i class="glyphicon glyphicon-home"></i>Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>
-                                        <div class="col-md-4 col-md-offset-4">
-                                            <div class="portfolio-item awesome mix_all" data-cat="awesome" >
-                                                <a class="preview" title="Image Title Here" href="__STATIC__/admin/assets/img/portfolio/g.jpg"><img src="__STATIC__/admin/assets/img/portfolio/g.jpg" class="img-responsive " alt="" /></a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td style="vertical-align: middle;">2017-04-18 16:14</td>
-                                    <td style="vertical-align: middle;">
-                                        <a class="btn btn-primary btn-xs" href="<?php echo url('admin/index/editslide'); ?>"><i class="glyphicon glyphicon-search"></i>Edit</a>
-                                        <a class="btn btn-danger btn-xs" href="<?php echo url('admin/index/delslide'); ?>"><i class="glyphicon glyphicon-home"></i>Delete</a>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <form role="form" action="<?php echo url('admin/index/updateslide'); ?>" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <!--<label class="control-label col-lg-4">Image Upload</label>-->
+                                <input id="kv-explorer" type="file">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">主标题（中文）</label>
+                                <input type="text" class="form-control" name="cn_title"/>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">主标题（英文）</label>
+                                <input type="text" class="form-control" name="en_title"/>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">副标题（中文）</label>
+                                <input type="text" class="form-control" name="cn_subtitle" />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">副标题（英文）</label>
+                                <input type="text" class="form-control" name="en_subtitle" />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">排序编号</label>
+                                <input type="text" class="form-control" name="sort" />
+                            </div>
+                            <button type="submit" class="btn btn-info">保存</button>
+                        </form>
                     </div>
                 </div>
-                <!-- End  Kitchen Sink -->
             </div>
         </div>
-        <!-- /. ROW  -->
     </div>
     <!-- /. PAGE INNER  -->
 </div>
+<!-- /. PAGE WRAPPER  -->
 
     <!-- /. PAGE WRAPPER  -->
 </div>
@@ -235,9 +195,27 @@
 <!-- CUSTOM SCRIPTS -->
 <script src="__STATIC__/admin/assets/js/custom.js"></script>
 
-<script src="__STATIC__/admin/assets/js/jquery.mixitup.min.js"></script>
-<script src="__STATIC__/admin/assets/js/jquery.prettyPhoto.js"></script>
-<script src="__STATIC__/admin/assets/js/galleryCustom.js"></script>
+<script src="__STATIC__/admin/assets/fileinput/js/fileinput.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $("#test-upload").fileinput({
+            'showPreview': false,
+            'allowedFileExtensions': ['jpg', 'png', 'gif'],
+            'elErrorContainer': '#errorBlock'
+        });
+        $("#kv-explorer").fileinput({
+            'theme': 'explorer',
+            'uploadUrl': "<?php echo url('admin/index/uploadimg'); ?>",
+            overwriteInitial: false,
+            initialPreviewAsData: true,
+            initialPreview: [],
+            initialPreviewConfig: []
+        }).on("fileuploaded", function(event, data, previewId, index) {
+                    console.log(event);
+            console.log(data);
+                });;
+    })
+</script>
 
 </body>
 </html>

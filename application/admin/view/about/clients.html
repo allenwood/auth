@@ -1,10 +1,14 @@
 {extend name="admin:base" /}
+{block name="style"}
+<!-- PAGE LEVEL STYLES -->
+<link href="__STATIC__/admin/assets/css/bootstrap-fileupload.min.css" rel="stylesheet" />
+{/block}
 {block name="body"}
 <div id="page-wrapper">
     <div id="page-inner">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="page-head-line">在线留言</h1>
+                <h1 class="page-head-line">公司客户</h1>
                 <h1 class="page-subhead-line"> </h1>
 
             </div>
@@ -33,7 +37,8 @@
                                     <th class="text-center">排序</th>
                                     <th class="text-center">中文名称</th>
                                     <th class="text-center">英文名称</th>
-                                    <th class="text-center">发布时日期</th>
+                                    <th class="text-center">LOGO</th>
+                                    <th class="text-center">网址</th>
                                     <th class="text-center">操作</th>
 
                                 </tr>
@@ -43,33 +48,33 @@
                                     <td>1</td>
                                     <td>Mark</td>
                                     <td>Otto</td>
-                                    <td>2017-04-18 16:14</td>
+                                    <td>@mdo</td>
+                                    <td>@mdo</td>
                                     <td>
-                                        <button class="btn"><i class="glyphicon glyphicon-headphones"></i>View</button>
-                                        <button class="btn btn-primary"><i class="glyphicon glyphicon-search"></i>Edit</button>
-                                        <button class="btn btn-danger"><i class="glyphicon glyphicon-home"></i>Delete</button>
+                                        <a class="btn btn-primary"><i class="glyphicon glyphicon-search"></i>Edit</a>
+                                        <a class="btn btn-danger"><i class="glyphicon glyphicon-home"></i>Delete</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
                                     <td>Jacob</td>
                                     <td>Thornton</td>
-                                    <td>2017-04-18 16:14</td>
+                                    <td>@fat</td>
+                                    <td>@fat</td>
                                     <td>
-                                        <button class="btn"><i class="glyphicon glyphicon-headphones"></i>View</button>
-                                        <button class="btn btn-primary"><i class="glyphicon glyphicon-search"></i>Edit</button>
-                                        <button class="btn btn-danger"><i class="glyphicon glyphicon-home"></i>Delete</button>
+                                        <a class="btn btn-primary"><i class="glyphicon glyphicon-search"></i>Edit</a>
+                                        <a class="btn btn-danger"><i class="glyphicon glyphicon-home"></i>Delete</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
                                     <td>Larry</td>
                                     <td>the Bird</td>
-                                    <td>2017-04-18 16:14</td>
+                                    <td>@twitter</td>
+                                    <td>@twitter</td>
                                     <td>
-                                        <button class="btn"><i class="glyphicon glyphicon-headphones"></i>View</button>
-                                        <button class="btn btn-primary"><i class="glyphicon glyphicon-search"></i>Edit</button>
-                                        <button class="btn btn-danger"><i class="glyphicon glyphicon-home"></i>Delete</button>
+                                        <a class="btn btn-primary"><i class="glyphicon glyphicon-search"></i>编辑</a>
+                                        <a class="btn btn-danger"><i class="glyphicon glyphicon-home"></i>删除</a>
                                     </td>
                                 </tr>
                                 </tbody>

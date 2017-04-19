@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:71:"C:\wamp64\www\0\auth\public/../application/admin\view\events\index.html";i:1492562615;s:69:"C:\wamp64\www\0\auth\public/../application/admin\view\admin\base.html";i:1492585636;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:71:"C:\wamp64\www\0\auth\public/../application/admin\view\events\index.html";i:1492562615;s:69:"C:\wamp64\www\0\auth\public/../application/admin\view\admin\base.html";i:1492586425;}*/ ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -53,7 +53,7 @@
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-desktop "></i>首页管理 <span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level collapse in">
+                    <ul class="nav nav-second-level">
                         <li>
                             <a href="<?php echo url('admin/index/slide'); ?>"><i class="fa fa-toggle-on"></i>轮播图管理</a>
                         </li>
@@ -61,7 +61,7 @@
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-yelp "></i>关于我们 <span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level collapse in">
+                    <ul class="nav nav-second-level">
                         <li>
                             <a href="<?php echo url('admin/about/info'); ?>"><i class="fa fa-flash "></i>公司介绍</a>
                         </li>
@@ -75,7 +75,7 @@
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-bicycle "></i>产品管理 <span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level collapse in">
+                    <ul class="nav nav-second-level">
                         <li>
                             <a href="<?php echo url('admin/category/index'); ?>"><i class="fa fa-desktop "></i>产品分类 </a>
                         </li>
@@ -86,7 +86,7 @@
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-sitemap "></i>新闻管理<span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level collapse in">
+                    <ul class="nav nav-second-level">
                         <li>
                             <a href="<?php echo url('admin/events/index'); ?>"><i class="fa fa-bicycle "></i>新闻列表</a>
                         </li>
@@ -100,13 +100,13 @@
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-sitemap "></i>联系我们<span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level collapse in">
+                    <ul class="nav nav-second-level">
                         <li>
                             <a href="<?php echo url('admin/contact/index'); ?>"><i class="fa fa-bicycle "></i>联系方式管理</a>
                         </li>
                         <li>
                             <a href="#">在线留言管理<span class="fa arrow"></span></a>
-                            <ul class="nav nav-third-level collapse in">
+                            <ul class="nav nav-third-level">
                                 <li>
                                     <a href="<?php echo url('admin/contact/consult'); ?>"><i class="fa fa-plus "></i>未处理</a>
                                 </li>
