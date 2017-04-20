@@ -1,2 +1,104 @@
 {extend name="admin:base"}
-{block name="body"}{/block}
+{block name="body"}
+{extend name="admin:base" /}
+{block name="style"}
+<!-- PAGE LEVEL STYLES -->
+<link href="__STATIC__/admin/assets/css/prettyPhoto.css" rel="stylesheet" />
+{/block}
+{block name="body"}
+<div id="page-wrapper">
+    <div id="page-inner">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-head-line">公司基本信息管理</h1>
+                <h1 class="page-subhead-line"> </h1>
+
+            </div>
+        </div>
+        <!-- /. ROW  -->
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    <a class="btn btn-primary" href="{:url('admin/about/editinfo')}"><i class="glyphicon glyphicon-search"></i>编辑</a>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-12">
+                <!--   Kitchen Sink -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        公司基本信息
+                    </div>
+                    <div class="panel-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered table-hover">
+                                <thead>
+                                <tr>
+                                    <th class="text-center">项目</th>
+                                    <th class="text-center">内容</th>
+
+                                </tr>
+                                </thead>
+                                <tbody class="text-center">
+                                <tr>
+                                    <td style="vertical-align:middle;">公司LOGO</td>
+                                    <td style="vertical-align:middle;">Otto</td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align:middle;">公司名称（中文）</td>
+                                    <td style="vertical-align:middle;">Thornton</td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align:middle;">公司名称（英文）</td>
+                                    <td style="vertical-align:middle;">Thornton</td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align:middle;">公司简介（中文）</td>
+                                    <td style="vertical-align:middle;">@twitter</td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align:middle;">公司简介（英文）</td>
+                                    <td style="vertical-align:middle;">@twitter</td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align:middle;">业务描述（中文）</td>
+                                    <td style="vertical-align:middle;">@twitter</td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align:middle;">业务描述（英文）</td>
+                                    <td style="vertical-align:middle;">@twitter</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- End  Kitchen Sink -->
+            </div>
+        </div>
+        <!-- /. ROW  -->
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="pagination">
+                    <li><a href="#">&laquo;</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /. PAGE INNER  -->
+</div>
+{/block}
+{block name="js"}
+<script src="__STATIC__/admin/assets/js/jquery.mixitup.min.js"></script>
+<script src="__STATIC__/admin/assets/js/jquery.prettyPhoto.js"></script>
+<script src="__STATIC__/admin/assets/js/galleryCustom.js"></script>
+{/block}
+{/block}

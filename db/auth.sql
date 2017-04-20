@@ -22,6 +22,9 @@ DROP TABLE IF EXISTS `zxcms_about`;
 
 CREATE TABLE `zxcms_about` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增id',
+  `log` varchar(255) DEFAULT NULL COMMENT '公司logo',
+  `cn_company_name` varchar(255) DEFAULT NULL COMMENT '中文公司名称',
+  `en_company_name` varchar(255) DEFAULT NULL COMMENT '英文公司名称',
   `cn_company_desc` text COMMENT '中文公司简介',
   `en_company_desc` text COMMENT '英文公司简介',
   `cn_service_desc` text COMMENT '中文业务简介',
@@ -52,7 +55,7 @@ CREATE TABLE `zxcms_admin` (
   `mobile` varchar(11) NOT NULL DEFAULT '',
   `realname` varchar(50) NOT NULL DEFAULT '',
   `openid` varchar(255) NOT NULL DEFAULT '',
-  `status` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否有效(2:无效,1:有效)',
+  `status` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否有效(-1:删除，0无效,1:有效)',
   `updatetime` int(10) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `username` (`username`),
@@ -61,7 +64,7 @@ CREATE TABLE `zxcms_admin` (
 
 /*Data for the table `zxcms_admin` */
 
-insert  into `zxcms_admin`(`id`,`username`,`password`,`encrypt`,`lastloginip`,`lastlogintime`,`email`,`mobile`,`realname`,`openid`,`status`,`updatetime`) values (1,'admin','21232f297a57a5a743894a0e4a801fc3','',0,1492399346,'5552123@qq.com','18888873646','阿杜','',1,1477623198),(2,'zhenxun','c2785bf6585103658d34413683ac36f8','',2130706433,1476067533,'','18888873646','','',1,1476067742),(3,'zhangsan','01d7f40760960e7bd9443513f22ab9af','',0,0,'','','','',1,0);
+insert  into `zxcms_admin`(`id`,`username`,`password`,`encrypt`,`lastloginip`,`lastlogintime`,`email`,`mobile`,`realname`,`openid`,`status`,`updatetime`) values (1,'admin','21232f297a57a5a743894a0e4a801fc3','',0,1492399346,'5552123@qq.com','18888873646','超级管理员','',1,1477623198),(2,'zhenxun','c2785bf6585103658d34413683ac36f8','',2130706433,1476067533,'','18888873646','用户1','',1,1476067742),(3,'zhangsan','01d7f40760960e7bd9443513f22ab9af','',0,0,'','','用户2','',1,0);
 
 /*Table structure for table `zxcms_admin_group` */
 

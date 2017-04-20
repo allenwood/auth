@@ -1,7 +1,7 @@
 {extend name="admin:base" /}
 {block name="style"}
 <!-- PAGE LEVEL STYLES -->
-<link href="__STATIC__/admin/assets/css/bootstrap-fileupload.min.css" rel="stylesheet" />
+<link href="__STATIC__/admin/assets/css/prettyPhoto.css" rel="stylesheet" />
 {/block}
 {block name="body"}
 <div id="page-wrapper">
@@ -17,7 +17,7 @@
         <div class="row">
             <div class="col-md-12">
                 <p>
-                    <button class="btn btn-primary"><i class="glyphicon glyphicon-search"></i>新增</button>
+                    <a class="btn btn-primary" href="{:url('admin/about/edithonor')}"><i class="glyphicon glyphicon-search"></i>新增</a>
                 </p>
             </div>
         </div>
@@ -35,45 +35,60 @@
                                 <thead>
                                 <tr>
                                     <th class="text-center">排序</th>
+                                    <th class="text-center">图片</th>
                                     <th class="text-center">中文名称</th>
                                     <th class="text-center">英文名称</th>
-                                    <th class="text-center">产品数量</th>
                                     <th class="text-center">操作</th>
 
                                 </tr>
                                 </thead>
                                 <tbody class="text-center">
                                 <tr>
-                                    <td>1</td>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                    <td>
-                                        <button class="btn"><i class="glyphicon glyphicon-headphones"></i>View</button>
-                                        <button class="btn btn-primary"><i class="glyphicon glyphicon-search"></i>Edit</button>
-                                        <button class="btn btn-danger"><i class="glyphicon glyphicon-home"></i>Delete</button>
+                                    <td style="vertical-align:middle;">1</td>
+                                    <td style="vertical-align:middle;">
+                                        <div class="col-md-4 col-md-offset-4">
+                                            <div class="portfolio-item awesome mix_all" data-cat="awesome" >
+                                                <a class="preview" title="Image Title Here" href="__STATIC__/admin/assets/img/portfolio/g.jpg"><img src="__STATIC__/admin/assets/img/portfolio/g.jpg" class="img-responsive " alt="" /></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td style="vertical-align:middle;">Otto</td>
+                                    <td style="vertical-align:middle;">@mdo</td>
+                                    <td style="vertical-align:middle;">
+                                        <a class="btn btn-primary btn-xs" href="{:url('admin/about/edithonor')}"><i class="glyphicon glyphicon-search"></i>编辑</a>
+                                        <a class="btn btn-danger btn-xs" href="{:url('admin/about/delhonor')}"><i class="glyphicon glyphicon-home"></i>删除</a>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>2</td>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                    <td>
-                                        <button class="btn"><i class="glyphicon glyphicon-headphones"></i>View</button>
-                                        <button class="btn btn-primary"><i class="glyphicon glyphicon-search"></i>Edit</button>
-                                        <button class="btn btn-danger"><i class="glyphicon glyphicon-home"></i>Delete</button>
+                                    <td style="vertical-align:middle;">2</td>
+                                    <td style="vertical-align:middle;">
+                                        <div class="col-md-4 col-md-offset-4">
+                                            <div class="portfolio-item awesome mix_all" data-cat="awesome" >
+                                                <a class="preview" title="Image Title Here" href="__STATIC__/admin/assets/img/portfolio/g.jpg"><img src="__STATIC__/admin/assets/img/portfolio/g.jpg" class="img-responsive " alt="" /></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td style="vertical-align:middle;">Thornton</td>
+                                    <td style="vertical-align:middle;">@fat</td>
+                                    <td style="vertical-align:middle;">
+                                        <a class="btn btn-primary btn-xs" href="{:url('admin/about/edithonor')}"><i class="glyphicon glyphicon-search"></i>编辑</a>
+                                        <a class="btn btn-danger btn-xs" href="{:url('admin/about/delhonor')}"><i class="glyphicon glyphicon-home"></i>删除</a>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>3</td>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>
-                                        <button class="btn"><i class="glyphicon glyphicon-headphones"></i>View</button>
-                                        <button class="btn btn-primary"><i class="glyphicon glyphicon-search"></i>Edit</button>
-                                        <button class="btn btn-danger"><i class="glyphicon glyphicon-home"></i>Delete</button>
+                                    <td style="vertical-align:middle;">3</td>
+                                    <td style="vertical-align:middle;">
+                                        <div class="col-md-4 col-md-offset-4">
+                                            <div class="portfolio-item awesome mix_all" data-cat="awesome" >
+                                                <a class="preview" title="Image Title Here" href="__STATIC__/admin/assets/img/portfolio/g.jpg"><img src="__STATIC__/admin/assets/img/portfolio/g.jpg" class="img-responsive " alt="" /></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td style="vertical-align:middle;">the Bird</td>
+                                    <td style="vertical-align:middle;">@twitter</td>
+                                    <td style="vertical-align:middle;">
+                                        <a class="btn btn-primary btn-xs" href="{:url('admin/about/edithonor')}"><i class="glyphicon glyphicon-search"></i>编辑</a>
+                                        <a class="btn btn-danger btn-xs" href="{:url('admin/about/delhonor')}"><i class="glyphicon glyphicon-home"></i>删除</a>
                                     </td>
                                 </tr>
                                 </tbody>
@@ -101,4 +116,9 @@
     </div>
     <!-- /. PAGE INNER  -->
 </div>
+{/block}
+{block name="js"}
+<script src="__STATIC__/admin/assets/js/jquery.mixitup.min.js"></script>
+<script src="__STATIC__/admin/assets/js/jquery.prettyPhoto.js"></script>
+<script src="__STATIC__/admin/assets/js/galleryCustom.js"></script>
 {/block}

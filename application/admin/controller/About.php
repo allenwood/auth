@@ -17,10 +17,18 @@ class About extends Admin
         return view('honor');
     }
 
+    public function edithonor(){
+        return view('edithonor');
+    }
+
 
     //company info management
     public function info(){
         return view('info');
+    }
+
+    public function editinfo(){
+        return view('editinfo');
     }
 
 

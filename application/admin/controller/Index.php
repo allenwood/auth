@@ -20,15 +20,6 @@ class Index extends Admin
         return view('index');
     }
 
-    /**
-     * login page
-     * @return \think\response\View
-     * @author Allen <wudi@wdcloud.cc>
-     */
-    public function login(){
-        return view('admin:login');
-    }
-
     public function slide(){
         return view('slide');
     }

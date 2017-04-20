@@ -1,0 +1,74 @@
+{extend name="admin:base" /}
+{block name="style"}
+<link href="__STATIC__/admin/assets/css/bootstrap-fileupload.min.css" rel="stylesheet" />
+<link href="__STATIC__/admin/assets/fileinput/css/fileinput.min.css" rel="stylesheet" />
+{/block}
+{block name="body"}
+<div id="page-wrapper">
+    <div id="page-inner">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-head-line">客户管理》<small>新增|更新</small></h1>
+                <h1 class="page-subhead-line"> </h1>
+            </div>
+        </div>
+        <!--/.ROW-->
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3 col-xs-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        编号：1
+                    </div>
+                    <div class="panel-body">
+                        <form role="form" action="{:url('admin/index/updateslide')}" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label class="control-label">LOGO</label>
+                                <input id="kv-explorer" type="file">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">名称（中文）</label>
+                                <input type="text" class="form-control" name="cn_title"/>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">名称（英文）</label>
+                                <input type="text" class="form-control" name="en_title"/>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">网址</label>
+                                <input type="text" class="form-control" name="en_title"/>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">排序编号</label>
+                                <input type="text" class="form-control" name="sort" />
+                            </div>
+                            <button type="submit" class="btn btn-info">保存</button>
+                            <a class="btn btn-info" href="{:url('admin/about/clients')}">取消</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /. PAGE INNER  -->
+</div>
+<!-- /. PAGE WRAPPER  -->
+{/block}
+{block name="js"}
+<script src="__STATIC__/admin/assets/fileinput/js/fileinput.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $("#kv-explorer").fileinput({
+            'theme': 'explorer',
+            'uploadUrl': "{:url('admin/index/uploadimg')}",
+            overwriteInitial: false,
+            initialPreviewAsData: true,
+            initialPreview: [],
+            initialPreviewConfig: []
+        }).on("fileuploaded", function(event, data, previewId, index) {
+                    console.log(event);
+            console.log(data);
+                });
+
+    })
+</script>
+{/block}

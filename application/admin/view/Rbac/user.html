@@ -1,0 +1,83 @@
+{extend name="admin:base" /}
+{block name="style"}
+<!-- PAGE LEVEL STYLES -->
+<link href="__STATIC__/admin/assets/css/bootstrap-fileupload.min.css" rel="stylesheet" />
+{/block}
+{block name="body"}
+<div id="page-wrapper">
+    <div id="page-inner">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-head-line">用户列表</h1>
+                <h1 class="page-subhead-line"> </h1>
+
+            </div>
+        </div>
+        <!-- /. ROW  -->
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    <a class="btn btn-primary" href="{:url('admin/rbac/edituser')}"><i class="glyphicon glyphicon-search"></i>新增</a>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-12">
+                <!--   Kitchen Sink -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Kitchen Sink
+                    </div>
+                    <div class="panel-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered table-hover">
+                                <thead>
+                                <tr>
+                                    <th class="text-center">编号</th>
+                                    <th class="text-center">用户名</th>
+                                    <th class="text-center">姓名</th>
+                                    <th class="text-center">上次登录时间</th>
+                                    <th class="text-center">操作</th>
+
+                                </tr>
+                                </thead>
+                                <tbody class="text-center">
+                                {volist name="lists" id="list"}
+                                <tr>
+                                    <td>{$list.id}</td>
+                                    <td>{$list.username}</td>
+                                    <td>{$list.realname}</td>
+                                    <td>{$list.lastloginip|long2ip}</td>
+                                    <td>
+                                        <a class="btn btn-primary btn-xs" href="{:url('admin/rbac/edituser',['id'=>$list.id])}"><i class="glyphicon glyphicon-search"></i>编辑</a>
+                                        <a class="btn btn-danger btn-xs" href="{:url('admin/rbac/deluser',['id'=>$list.id])}"><i class="glyphicon glyphicon-home"></i>删除</a>
+                                    </td>
+                                </tr>
+                                {/volist}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- End  Kitchen Sink -->
+            </div>
+        </div>
+        <!-- /. ROW  -->
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="pagination">
+                    <li><a href="#">&laquo;</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /. PAGE INNER  -->
+</div>
+{/block}
