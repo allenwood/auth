@@ -10,6 +10,7 @@ namespace app\admin\controller;
 
 
 use think\Controller;
+use think\Session;
 
 class Entry extends Controller
 {
@@ -27,7 +28,27 @@ class Entry extends Controller
      * @author Allen <wudi@wdcloud.cc>
      */
     public function dologin(){
-        dump(input());
+        $data=input();
+        if(!captcha_check($data['captcha'])){
+            $this->error('验证码输入失败',url('admin/entry/login'));
+        };
+        if(empty($data['username']) || empty($data['password'])){
+            $this->error("用户名或者密码为空",url('admin/entry/login'));
+        }else{
+            $userInfo=db('user')->where(['status'=>1,'username'=>$data['username']])->find();
+            if(empty($userInfo)){
+                $this->error('没用该用户的有效信息',url('admin/entry/login'));
+            }else{
+                if($userInfo['password']===md5($data['password'])){
+                    session('user',$userInfo);
+                    session('uid',$userInfo['id']);
+                    db('user')->where(['id'=>$userInfo['id']])->update(['lastloginip'=>ip2long($_SERVER['REMOTE_ADDR']),'lastlogintime'=>time()]);
+                    $this->redirect(url("admin/index/index"));
+                }else{
+                    $this->error('密码错误',url('admin/entry/login'));
+                }
+            }
+        }
         //return $this->redirect(url('admin/index/index'));
     }
 
@@ -36,6 +57,7 @@ class Entry extends Controller
      * @author Allen <wudi@wdcloud.cc>
      */
     public function logout(){
-
+        Session::clear();
+        $this->redirect('admin/entry/login');
     }
 }

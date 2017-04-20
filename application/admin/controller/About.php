@@ -24,11 +24,28 @@ class About extends Admin
 
     //company info management
     public function info(){
+        $info=db('about')->find();
+        $this->assign('info',$info);
         return view('info');
     }
 
     public function editinfo(){
+        $id=input('id',0);
+        if(empty($id)){
+            $this->error('公司信息查询失败');
+        }else{
+            $info=db('about')->where(["id"=>$id])->find();
+            if(empty($info)){
+                $this->error("公司信息查询错误");
+            }else{
+                $this->assign('info',$info);
+            }
+        }
         return view('editinfo');
+    }
+
+    public function updateinfo(){
+        dump(input());
     }
 
 

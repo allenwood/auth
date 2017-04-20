@@ -16,7 +16,7 @@ class Rbac extends Admin
      * @author Allen <wudi@wdcloud.cc>
      */
     public function user(){
-        $lists=db('admin')->where(['status'=>1])->select();
+        $lists=db('user')->where(['status'=>1])->paginate(10);
         $this->assign('lists',$lists);
         return view('user');
     }
@@ -31,7 +31,7 @@ class Rbac extends Admin
         if(empty($id)){
             return view('adduser');
         }else{
-            $userInfo=db('admin')->where(['id'=>$id,'status'=>1])->find();
+            $userInfo=db('user')->where(['id'=>$id,'status'=>1])->find();
             if(empty($userInfo)){
                 $this->error('用户信息丢失');
             }
@@ -40,12 +40,54 @@ class Rbac extends Admin
         }
     }
 
+    /**
+     * update user record
+     * @throws \think\Exception
+     */
     public function updateuser(){
-        $data=Input();
-        if($data['id']){
-
+        $data=input();
+        if(!empty($data['id'])){
+            $userInfo=db('user')->where(['id'=>$data['id']])->find();
+            if($userInfo['password']!==md5($data['pre_pwd'])){
+                if($data['password']===$data['pwd_repeat']){
+                    unset($data['pre_pwd']);
+                    unset($data['pwd_repeat']);
+                    unset($data['pre_pwd']);
+                    $data['password']=md5($data['password']);
+                    $data['lastloginip']=ip2long($_SERVER['REMOTE_ADDR']);
+                    $data['lastlogintime']=time();
+                    $data['status']=1;
+                    $data['updatetime']=time();
+                    $re=db('user')->update($data);
+                    if($re!==false){
+                        $this->success("操作成功：用户信息已更新",url("admin/rbac/user"));
+                    }else{
+                        $this->error("操作失败：用户信息未更新");
+                    }
+                }else{
+                    $this->error("操作失败：两次输入的新密码不一致");
+                }
+            }else{
+                $this->error('操作失败：原始密码错误');
+            }
         }else{
-            if($data['password']===$data[''])
+            if($data['password']!==$data['pwd_repeat']){
+                $this->error('两次输入的密码不一致');
+            }else{
+                unset($data['pwd_repeat']);
+                $data['password']=md5($data['password']);
+                $data['lastloginip']=ip2long($_SERVER['REMOTE_ADDR']);
+                $data['lastlogintime']=time();
+                $data['password']=md5($data['password']);
+                $data['status']=1;
+                $data['updatetime']=time();
+                $re=db('user')->insert($data);
+                if($re){
+                    $this->success('操作成功：用户已经添加',url('admin/rbac/user'));
+                }else{
+                    $this->error('操作失败：用户添加失败');
+                }
+            }
         }
     }
 
@@ -55,7 +97,7 @@ class Rbac extends Admin
      */
     public function deluser(){
         $id=input('id','');
-        $re=db('admin')->where(['id'=>$id])->update(['status'=>-1]);
+        $re=db('user')->where(['id'=>$id])->update(['status'=>-1]);
         if($re!==false){
             $this->success('操作成功');
         }else{

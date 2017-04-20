@@ -22,7 +22,7 @@ DROP TABLE IF EXISTS `zxcms_about`;
 
 CREATE TABLE `zxcms_about` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增id',
-  `log` varchar(255) DEFAULT NULL COMMENT '公司logo',
+  `logo` varchar(255) DEFAULT NULL COMMENT '公司logo',
   `cn_company_name` varchar(255) DEFAULT NULL COMMENT '中文公司名称',
   `en_company_name` varchar(255) DEFAULT NULL COMMENT '英文公司名称',
   `cn_company_desc` text COMMENT '中文公司简介',
@@ -36,91 +36,30 @@ CREATE TABLE `zxcms_about` (
   `create_uid` int(11) DEFAULT NULL COMMENT '创建人uid',
   `update_uid` int(11) DEFAULT NULL COMMENT '更新人uid',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 /*Data for the table `zxcms_about` */
 
-/*Table structure for table `zxcms_admin` */
+insert  into `zxcms_about`(`id`,`logo`,`cn_company_name`,`en_company_name`,`cn_company_desc`,`en_company_desc`,`cn_service_desc`,`en_service_desc`,`cn_other_desc`,`en_other_desc`,`create_time`,`udpate_time`,`create_uid`,`update_uid`) values (1,'/uploads/20170421/66bdf4f92496dd2a9e9a8003335259c7.jpg','青岛丽凯化工有限公司','Qingdao Richkem Co., Ltd.','青岛丽凯化工有限公司','Qingdao Richkem Co., Ltd.，is a high-tech fine chemical enterprise engaged in the R & D, manufacturing , trading of flame retardants and pharmaceutical intermediates.Production site located in Binhai Economic Development Zone in Weifang,Shandong,China,the company has been approved by SGS, ROHS 2002/95/EC, and products have been pre-registered with REACH. \r\nTaking full use of abundant bromine resources, adhering to advanced techniques, strict management, enthusiasm sales team,Richkem has been accepted in international market.We believe “quality, reliable, customer satisfaction, continuous improvement”as principle. Richkem focuses on plastic additives and pharmaceutical intermediates. Current main products are brominated polystyrene,Sb2O3 masterbatch,and flame retardant masterbatch. Production capacity has been brominated polystyrene(2000mt per year, flame retardant masterbatch 2000mt per year).Sales covers Europe,USA,Asia etc. \r\nIn the future, the company will insist on technique improving and innoviation, optimize company structure, attract excellent people ,improve company competition，develop international market. \r\nBased on philosophy of \"reliable cooperation, mutural developing \", we sincerely welcome all cooperations.','青岛丽凯化工有限公司','Qingdao Richkem Co., Ltd.，is a high-tech fine chemical enterprise engaged in the R & D, manufacturing , trading of flame retardants and pharmaceutical intermediates.Production site located in Binhai Economic Development Zone in Weifang,Shandong,China,the company has been approved by SGS, ROHS 2002/95/EC, and products have been pre-registered with REACH. \r\nTaking full use of abundant bromine resources, adhering to advanced techniques, strict management, enthusiasm sales team,Richkem has been accepted in international market.We believe “quality, reliable, customer satisfaction, continuous improvement”as principle. Richkem focuses on plastic additives and pharmaceutical intermediates. Current main products are brominated polystyrene,Sb2O3 masterbatch,and flame retardant masterbatch. Production capacity has been brominated polystyrene(2000mt per year, flame retardant masterbatch 2000mt per year).Sales covers Europe,USA,Asia etc. \r\nIn the future, the company will insist on technique improving and innoviation, optimize company structure, attract excellent people ,improve company competition，develop international market. \r\nBased on philosophy of \"reliable cooperation, mutural developing \", we sincerely welcome all cooperations.','其他描述','其他描述',1492706275,1492706275,1,1);
 
-DROP TABLE IF EXISTS `zxcms_admin`;
+/*Table structure for table `zxcms_action_log` */
 
-CREATE TABLE `zxcms_admin` (
-  `id` mediumint(6) unsigned NOT NULL AUTO_INCREMENT,
-  `username` varchar(20) NOT NULL DEFAULT '',
-  `password` varchar(32) NOT NULL DEFAULT '',
-  `encrypt` varchar(6) NOT NULL DEFAULT '',
-  `lastloginip` int(10) NOT NULL DEFAULT '0',
-  `lastlogintime` int(10) unsigned NOT NULL DEFAULT '0',
-  `email` varchar(40) NOT NULL DEFAULT '',
-  `mobile` varchar(11) NOT NULL DEFAULT '',
-  `realname` varchar(50) NOT NULL DEFAULT '',
-  `openid` varchar(255) NOT NULL DEFAULT '',
-  `status` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否有效(-1:删除，0无效,1:有效)',
-  `updatetime` int(10) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`),
-  KEY `username` (`username`),
-  KEY `status` (`status`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+DROP TABLE IF EXISTS `zxcms_action_log`;
 
-/*Data for the table `zxcms_admin` */
-
-insert  into `zxcms_admin`(`id`,`username`,`password`,`encrypt`,`lastloginip`,`lastlogintime`,`email`,`mobile`,`realname`,`openid`,`status`,`updatetime`) values (1,'admin','21232f297a57a5a743894a0e4a801fc3','',0,1492399346,'5552123@qq.com','18888873646','超级管理员','',1,1477623198),(2,'zhenxun','c2785bf6585103658d34413683ac36f8','',2130706433,1476067533,'','18888873646','用户1','',1,1476067742),(3,'zhangsan','01d7f40760960e7bd9443513f22ab9af','',0,0,'','','用户2','',1,0);
-
-/*Table structure for table `zxcms_admin_group` */
-
-DROP TABLE IF EXISTS `zxcms_admin_group`;
-
-CREATE TABLE `zxcms_admin_group` (
-  `id` tinyint(3) unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `description` text,
-  `rules` varchar(500) NOT NULL DEFAULT '' COMMENT '用户组拥有的规则id，多个规则 , 隔开',
-  `listorder` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `updatetime` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `listorder` (`listorder`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
-
-/*Data for the table `zxcms_admin_group` */
-
-insert  into `zxcms_admin_group`(`id`,`name`,`description`,`rules`,`listorder`,`updatetime`) values (1,'普通管理员','密码加密只是MD5','',0,1477622552),(2,'工作人员','仅拥有日志管理权限','18,23,27',0,1476067479);
-
-/*Table structure for table `zxcms_admin_group_access` */
-
-DROP TABLE IF EXISTS `zxcms_admin_group_access`;
-
-CREATE TABLE `zxcms_admin_group_access` (
-  `uid` int(10) unsigned NOT NULL COMMENT '用户id',
-  `group_id` mediumint(8) unsigned NOT NULL COMMENT '用户组id',
-  UNIQUE KEY `uid_group_id` (`uid`,`group_id`),
-  KEY `uid` (`uid`),
-  KEY `group_id` (`group_id`)
+CREATE TABLE `zxcms_action_log` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `m` varchar(15) DEFAULT NULL,
+  `c` varchar(20) DEFAULT NULL,
+  `a` varchar(20) DEFAULT NULL,
+  `querystring` varchar(255) DEFAULT NULL,
+  `userid` mediumint(8) unsigned DEFAULT '0',
+  `username` varchar(20) DEFAULT NULL,
+  `ip` int(10) DEFAULT NULL,
+  `time` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-/*Data for the table `zxcms_admin_group_access` */
-
-insert  into `zxcms_admin_group_access`(`uid`,`group_id`) values (2,2),(3,2);
-
-/*Table structure for table `zxcms_admin_log` */
-
-DROP TABLE IF EXISTS `zxcms_admin_log`;
-
-CREATE TABLE `zxcms_admin_log` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `m` varchar(15) NOT NULL,
-  `c` varchar(20) NOT NULL,
-  `a` varchar(20) NOT NULL,
-  `querystring` varchar(255) NOT NULL,
-  `userid` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `username` varchar(20) NOT NULL,
-  `ip` int(10) NOT NULL,
-  `time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=454 DEFAULT CHARSET=utf8;
-
-/*Data for the table `zxcms_admin_log` */
-
-insert  into `zxcms_admin_log`(`id`,`m`,`c`,`a`,`querystring`,`userid`,`username`,`ip`,`time`) values (227,'admin','Index','favicon.ico','',1,'admin',0,'2017-04-17 10:21:50'),(228,'admin','Product','category','',1,'admin',0,'2017-04-17 10:21:52'),(229,'admin','Product','favicon.ico','',1,'admin',0,'2017-04-17 10:21:52'),(230,'admin','Product','lists','',1,'admin',0,'2017-04-17 10:21:53'),(231,'admin','Product','category','',1,'admin',0,'2017-04-17 10:21:54'),(232,'admin','Product','edit','?id=1',1,'admin',0,'2017-04-17 10:21:56'),(233,'admin','Product','favicon.ico','',1,'admin',0,'2017-04-17 10:21:56'),(234,'admin','Product','category','',1,'admin',0,'2017-04-17 10:21:58'),(235,'admin','Index','favicon.ico','',1,'admin',0,'2017-04-17 10:42:28'),(236,'admin','Product','category','',1,'admin',0,'2017-04-17 10:42:49'),(237,'admin','Product','favicon.ico','',1,'admin',0,'2017-04-17 10:42:49'),(238,'admin','Product','info','',1,'admin',0,'2017-04-17 10:42:50'),(239,'admin','Product','category','',1,'admin',0,'2017-04-17 10:42:54'),(240,'admin','Product','category','',1,'admin',0,'2017-04-17 10:44:03'),(241,'admin','Product','category','',1,'admin',0,'2017-04-17 10:44:28'),(242,'admin','Product','edit','',1,'admin',0,'2017-04-17 10:44:30'),(243,'admin','Product','category','',1,'admin',0,'2017-04-17 10:44:31'),(244,'admin','Product','category','',1,'admin',0,'2017-04-17 10:45:36'),(245,'admin','Product','edit','',1,'admin',0,'2017-04-17 10:45:38'),(246,'admin','Product','update','',1,'admin',0,'2017-04-17 10:49:52'),(247,'admin','Product','update','',1,'admin',0,'2017-04-17 10:55:02'),(248,'admin','Product','lists','',1,'admin',0,'2017-04-17 10:55:04'),(249,'admin','Product','favicon.ico','',1,'admin',0,'2017-04-17 10:55:04'),(250,'admin','Product','category','',1,'admin',0,'2017-04-17 10:56:06'),(251,'admin','Product','category','',1,'admin',0,'2017-04-17 10:57:16'),(252,'admin','Product','category','',1,'admin',0,'2017-04-17 11:00:34'),(253,'admin','Product','category','',1,'admin',0,'2017-04-17 11:00:36'),(254,'admin','Product','category','',1,'admin',0,'2017-04-17 11:00:44'),(255,'admin','Product','edit','?id=5',1,'admin',0,'2017-04-17 11:02:08'),(256,'admin','Product','update','',1,'admin',0,'2017-04-17 11:02:30'),(257,'admin','Product','category','',1,'admin',0,'2017-04-17 11:02:32'),(258,'admin','Index','favicon.ico','',1,'admin',0,'2017-04-17 11:22:27'),(259,'admin','Product','category','',1,'admin',0,'2017-04-17 11:22:36'),(260,'admin','Product','category','',1,'admin',0,'2017-04-17 11:25:32'),(261,'admin','Product','favicon.ico','',1,'admin',0,'2017-04-17 11:25:32'),(262,'admin','Product','edit','?id=5',1,'admin',0,'2017-04-17 11:25:40'),(263,'admin','Product','favicon.ico','',1,'admin',0,'2017-04-17 11:25:40'),(264,'admin','Product','edit','?id=5',1,'admin',0,'2017-04-17 11:26:54'),(265,'admin','Product','edit','?id=5',1,'admin',0,'2017-04-17 11:27:22'),(266,'admin','Product','edit','?id=5',1,'admin',0,'2017-04-17 11:27:35'),(267,'admin','Product','favicon.ico','',1,'admin',0,'2017-04-17 11:27:36'),(268,'admin','Product','update','',1,'admin',0,'2017-04-17 11:27:49'),(269,'admin','Product','category','',1,'admin',0,'2017-04-17 11:27:51'),(270,'admin','Product','category','',1,'admin',0,'2017-04-17 11:29:27'),(271,'admin','Product','edit','?id=1',1,'admin',0,'2017-04-17 11:29:49'),(272,'admin','Product','category','',1,'admin',0,'2017-04-17 11:29:52'),(273,'admin','Product','category','',1,'admin',0,'2017-04-17 11:29:53'),(274,'admin','Product','lists','?id=3',1,'admin',0,'2017-04-17 11:29:57'),(275,'admin','Product','category','',1,'admin',0,'2017-04-17 11:29:58'),(276,'admin','Product','category','',1,'admin',0,'2017-04-17 11:30:25'),(277,'admin','Product','category','',1,'admin',0,'2017-04-17 11:30:43'),(278,'admin','Product','category','',1,'admin',0,'2017-04-17 11:31:08'),(279,'admin','Product','category','',1,'admin',0,'2017-04-17 11:31:39'),(280,'admin','Product','favicon.ico','',1,'admin',0,'2017-04-17 11:31:40'),(281,'admin','Product','category','',1,'admin',0,'2017-04-17 11:31:58'),(282,'admin','Product','favicon.ico','',1,'admin',0,'2017-04-17 11:31:59'),(283,'admin','Product','category','',1,'admin',0,'2017-04-17 11:32:08'),(284,'admin','Product','category','',1,'admin',0,'2017-04-17 11:32:36'),(285,'admin','Product','category','',1,'admin',0,'2017-04-17 11:32:42'),(286,'admin','Product','edit','',1,'admin',0,'2017-04-17 11:33:01'),(287,'admin','Product','update','',1,'admin',0,'2017-04-17 11:33:36'),(288,'admin','Product','category','',1,'admin',0,'2017-04-17 11:33:37'),(289,'admin','Product','edit','',1,'admin',0,'2017-04-17 11:34:38'),(290,'admin','Product','update','',1,'admin',0,'2017-04-17 11:34:57'),(291,'admin','Product','update','',1,'admin',0,'2017-04-17 11:35:07'),(292,'admin','Product','category','',1,'admin',0,'2017-04-17 11:35:09'),(293,'admin','Product','del','?id=6',1,'admin',0,'2017-04-17 11:35:21'),(294,'admin','Product','category','',1,'admin',0,'2017-04-17 11:35:24'),(295,'admin','Product','category','',1,'admin',0,'2017-04-17 11:35:25'),(296,'admin','Product','del','?id=7',1,'admin',0,'2017-04-17 11:36:14'),(297,'admin','Product','category','',1,'admin',0,'2017-04-17 11:36:18'),(298,'admin','Product','del','?id=5',1,'admin',0,'2017-04-17 11:37:25'),(299,'admin','Product','category','',1,'admin',0,'2017-04-17 11:37:27'),(300,'admin','Product','lists','',1,'admin',0,'2017-04-17 11:37:31'),(301,'admin','Product','favicon.ico','',1,'admin',0,'2017-04-17 11:37:31'),(302,'admin','Product','lists','',1,'admin',0,'2017-04-17 11:41:37'),(303,'admin','Product','lists','',1,'admin',0,'2017-04-17 11:55:56'),(304,'admin','Product','lists','',1,'admin',0,'2017-04-17 13:35:55'),(305,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 13:35:56'),(306,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 13:36:26'),(307,'admin','Product','lists','',1,'admin',0,'2017-04-17 13:36:29'),(308,'admin','Product','lists','',1,'admin',0,'2017-04-17 13:38:04'),(309,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 13:40:17'),(310,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 13:40:19'),(311,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 13:40:39'),(312,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 13:40:40'),(313,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 13:41:33'),(314,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 13:42:11'),(315,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 13:42:44'),(316,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 13:42:56'),(317,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 13:43:00'),(318,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 13:43:03'),(319,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 13:43:20'),(320,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 13:43:41'),(321,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 13:44:59'),(322,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 13:45:06'),(323,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 13:46:01'),(324,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 13:46:21'),(325,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 13:46:27'),(326,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 13:46:39'),(327,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 13:48:50'),(328,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 13:56:43'),(329,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 13:56:50'),(330,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 14:01:41'),(331,'admin','Product','$product.product_pic','',1,'admin',0,'2017-04-17 14:01:41'),(332,'admin','Product','$product.product_pic','',1,'admin',0,'2017-04-17 14:01:41'),(333,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 14:01:55'),(334,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 14:03:19'),(335,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 14:04:10'),(336,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 14:04:25'),(337,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 14:04:47'),(338,'admin','Product','favicon.ico','',1,'admin',0,'2017-04-17 14:04:48'),(339,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 14:05:28'),(340,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 14:05:58'),(341,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 14:07:21'),(342,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 14:10:54'),(343,'admin','Product','favicon.ico','',1,'admin',0,'2017-04-17 14:10:55'),(344,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 14:14:37'),(345,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 14:15:05'),(346,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 14:17:06'),(347,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 14:18:03'),(348,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 14:18:52'),(349,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 14:19:12'),(350,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 14:19:51'),(351,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 14:20:21'),(352,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 14:26:04'),(353,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 14:27:02'),(354,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 14:27:25'),(355,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 14:27:55'),(356,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 14:33:02'),(357,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 14:34:47'),(358,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 14:36:05'),(359,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 14:37:32'),(360,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 14:38:25'),(361,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 14:39:11'),(362,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 14:39:53'),(363,'admin','Product','prdupdate','',1,'admin',0,'2017-04-17 14:40:20'),(364,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 15:05:48'),(365,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 15:13:28'),(366,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 15:14:24'),(367,'admin','Product','prdupdate','',1,'admin',0,'2017-04-17 15:14:54'),(368,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 15:15:11'),(369,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 15:15:16'),(370,'admin','Product','prdupdate','',1,'admin',0,'2017-04-17 15:15:36'),(371,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 15:15:39'),(372,'admin','Product','lists','',1,'admin',0,'2017-04-17 15:15:45'),(373,'admin','Product','lists','',1,'admin',0,'2017-04-17 15:16:17'),(374,'admin','Product','lists','',1,'admin',0,'2017-04-17 15:16:49'),(375,'admin','Product','lists','',1,'admin',0,'2017-04-17 15:17:02'),(376,'admin','Product','lists','',1,'admin',0,'2017-04-17 15:17:09'),(377,'admin','Product','lists','',1,'admin',0,'2017-04-17 15:17:31'),(378,'admin','Product','category','',1,'admin',0,'2017-04-17 15:19:04'),(379,'admin','Product','lists','?id=1',1,'admin',0,'2017-04-17 15:19:13'),(380,'admin','Product','favicon.ico','',1,'admin',0,'2017-04-17 15:19:13'),(381,'admin','Product','category','',1,'admin',0,'2017-04-17 15:19:16'),(382,'admin','Product','lists','',1,'admin',0,'2017-04-17 15:19:19'),(383,'admin','Product','lists','',1,'admin',0,'2017-04-17 15:19:22'),(384,'admin','Product','edit','?id=1',1,'admin',0,'2017-04-17 15:19:25'),(385,'admin','Product','lists','',1,'admin',0,'2017-04-17 15:19:27'),(386,'admin','Product','lists','',1,'admin',0,'2017-04-17 15:19:46'),(387,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:19:48'),(388,'admin','Product','prdupdate','',1,'admin',0,'2017-04-17 15:20:04'),(389,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:20:06'),(390,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:20:38'),(391,'admin','Product','prdupdate','',1,'admin',0,'2017-04-17 15:20:43'),(392,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:20:46'),(393,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:21:31'),(394,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:23:20'),(395,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:24:06'),(396,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:24:14'),(397,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:24:30'),(398,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:24:40'),(399,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:24:48'),(400,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:25:27'),(401,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:26:10'),(402,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:27:04'),(403,'admin','Product','prdupdate','',1,'admin',0,'2017-04-17 15:29:46'),(404,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:29:47'),(405,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:29:49'),(406,'admin','Product','favicon.ico','',1,'admin',0,'2017-04-17 15:29:50'),(407,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:30:28'),(408,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:30:55'),(409,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:31:08'),(410,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:31:21'),(411,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:32:46'),(412,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:33:22'),(413,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:34:13'),(414,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:35:12'),(415,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:35:42'),(416,'admin','Product','prdupdate','',1,'admin',0,'2017-04-17 15:35:48'),(417,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:35:49'),(418,'admin','Product','prdupdate','',1,'admin',0,'2017-04-17 15:35:54'),(419,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:35:55'),(420,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:37:28'),(421,'admin','Product','prdupdate','',1,'admin',0,'2017-04-17 15:37:55'),(422,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:37:58'),(423,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:38:05'),(424,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:42:38'),(425,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:43:53'),(426,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:44:31'),(427,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:44:42'),(428,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 15:44:55'),(429,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 16:03:28'),(430,'admin','Product','prdedit','?id=1',1,'admin',0,'2017-04-17 16:04:02'),(431,'admin','Product','lists','',1,'admin',0,'2017-04-17 16:05:40'),(432,'admin','Product','favicon.ico','',1,'admin',0,'2017-04-17 16:05:40'),(433,'admin','Product','lists','',1,'admin',0,'2017-04-17 16:05:52'),(434,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 16:05:53'),(435,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 16:07:26'),(436,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 16:07:43'),(437,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 16:08:39'),(438,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 16:09:19'),(439,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 16:11:30'),(440,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 16:11:48'),(441,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 16:11:50'),(442,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 16:12:08'),(443,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 16:19:50'),(444,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 16:20:07'),(445,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 16:25:30'),(446,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 16:32:28'),(447,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 16:33:04'),(448,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 16:42:40'),(449,'admin','Product','index','',1,'admin',0,'2017-04-17 16:42:42'),(450,'admin','Index','favicon.ico','',1,'admin',0,'2017-04-17 16:45:43'),(451,'admin','Product','lists','',1,'admin',0,'2017-04-17 16:50:55'),(452,'admin','Product','prdedit','',1,'admin',0,'2017-04-17 16:50:56'),(453,'admin','Product','index','',1,'admin',0,'2017-04-17 16:50:57');
+/*Data for the table `zxcms_action_log` */
 
 /*Table structure for table `zxcms_app` */
 
@@ -239,6 +178,25 @@ CREATE TABLE `zxcms_events` (
 
 insert  into `zxcms_events`(`id`,`cn_title`,`en_title`,`cn_content`,`en_content`,`attache_name`,`attache_url`,`create_uid`,`update_uid`,`create_time`,`update_time`,`status`) values (7,'阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发','','','sdf asdf asf asdf asfasdf','1','1',1,1,1,1,1),(8,'阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发','','','按时发放','1','1',1,1,1,1,1),(9,'阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发','','','阿萨德发','','',1,1,1487059118,1487059118,1),(10,'阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发','','','阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发','1','1',1,1,1,1,1),(11,'阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发','','','阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发','1','1',1,1,1,1,1),(12,'阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发','','','阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发','1','1',1,1,1,1,1),(13,'阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发','','','阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发','1','1',1,1,1,1,1),(14,'阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发','','','阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发','1','1',1,1,1,1,1),(15,'asfa sf asfasf','','','asdf asfasfd','','',1,1,1487060748,1487060748,1),(16,'阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发','','','<span style=\"color:#686868;font-family:&quot;font-size:14px;background-color:#F2F2F2;\">阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发</span><span style=\"color:#686868;font-family:&quot;font-size:14px;background-color:#F2F2F2;\">阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发</span><span style=\"color:#686868;font-family:&quot;font-size:14px;background-color:#F2F2F2;\">阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发</span><span style=\"color:#686868;font-family:&quot;font-size:14px;background-color:#F2F2F2;\">阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发</span><span style=\"color:#686868;font-family:&quot;font-size:14px;background-color:#F2F2F2;\">阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发</span>','','',1,1,1487060764,1487060764,1),(17,'阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发','','','<span style=\"color:#686868;font-family:&quot;font-size:14px;background-color:#F2F2F2;\">阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发阿萨德发</span>','','',1,1,1487060895,1487060895,1);
 
+/*Table structure for table `zxcms_group` */
+
+DROP TABLE IF EXISTS `zxcms_group`;
+
+CREATE TABLE `zxcms_group` (
+  `id` tinyint(3) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `description` text,
+  `rules` varchar(500) NOT NULL DEFAULT '' COMMENT '用户组拥有的规则id，多个规则 , 隔开',
+  `listorder` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `updatetime` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `listorder` (`listorder`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+/*Data for the table `zxcms_group` */
+
+insert  into `zxcms_group`(`id`,`name`,`description`,`rules`,`listorder`,`updatetime`) values (1,'普通管理员','密码加密只是MD5','',0,1477622552),(2,'工作人员','仅拥有日志管理权限','18,23,27',0,1476067479);
+
 /*Table structure for table `zxcms_honor` */
 
 DROP TABLE IF EXISTS `zxcms_honor`;
@@ -338,6 +296,22 @@ CREATE TABLE `zxcms_product_category` (
 
 insert  into `zxcms_product_category`(`id`,`icon`,`cn_title`,`en_title`,`cn_desc`,`en_desc`,`sort`,`create_uid`,`update_uid`,`create_time`,`update_time`,`status`) values (1,NULL,'阻燃剂','Flame retardant','化学品是指各种元素组成的纯净物和混合物，无论是天然的还是人造的。 据美国化学文摘登录，全世界已有的化学品多达700万种，其中已作为商品上市的有10万余种，经常使用的有7万.','Qingdao Richkem Co., Ltd. is a high-tech fine chemical enterprise dedicated in researching and supplying flame retardants and intermediates.',1,1,1,1492179000,1492179000,1),(2,NULL,'阻燃母粒','Masterbatch','化学品是指各种元素组成的纯净物和混合物，无论是天然的还是人造的。 据美国化学文摘登录，全世界已有的化学品多达700万种，其中已作为商品上市的有10万余种，经常使用的有7万.','Qingdao Richkem Co., Ltd. is a high-tech fine chemical enterprise dedicated in researching and supplying flame retardants and intermediates.',2,1,1,1492179000,1492179000,1),(3,NULL,'中间体','Intermediates','化学品是指各种元素组成的纯净物和混合物，无论是天然的还是人造的。 据美国化学文摘登录，全世界已有的化学品多达700万种，其中已作为商品上市的有10万余种，经常使用的有7万.','Qingdao Richkem Co., Ltd. is a high-tech fine chemical enterprise dedicated in researching and supplying flame retardants and intermediates.',3,1,1,1492179000,1492179000,1),(4,NULL,'大林PLAVIS','Daelim Plavis','化学品是指各种元素组成的纯净物和混合物，无论是天然的还是人造的。 据美国化学文摘登录，全世界已有的化学品多达700万种，其中已作为商品上市的有10万余种，经常使用的有7万.','Qingdao Richkem Co., Ltd. is a high-tech fine chemical enterprise dedicated in researching and supplying flame retardants and intermediates.',4,1,1,1492179000,1492179000,1),(5,NULL,'爆炸物品','Explode Thin','爆炸物品属于禁运物品','The Exploded Thins is forbidden where trasfering using trucks or ships. please try to blow somethinkg up.',6,NULL,1,NULL,1492400245,-1),(6,NULL,'中文的名字可以更长','English name can be longer','中文的描述可以更称','english description can be longer',7,NULL,NULL,1492400016,1492400016,-1),(7,NULL,'阿拉法接啊十六块腹肌','sldfjaslfjl','阿拉就废了；阿飞就卡死了；巨峰路；看',' asldfjlaskfjlaskfjlas',8,1,1,1492400107,1492400175,-1);
 
+/*Table structure for table `zxcms_rule` */
+
+DROP TABLE IF EXISTS `zxcms_rule`;
+
+CREATE TABLE `zxcms_rule` (
+  `uid` int(10) unsigned NOT NULL COMMENT '用户id',
+  `group_id` mediumint(8) unsigned NOT NULL COMMENT '用户组id',
+  UNIQUE KEY `uid_group_id` (`uid`,`group_id`),
+  KEY `uid` (`uid`),
+  KEY `group_id` (`group_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+/*Data for the table `zxcms_rule` */
+
+insert  into `zxcms_rule`(`uid`,`group_id`) values (2,2),(3,2);
+
 /*Table structure for table `zxcms_service` */
 
 DROP TABLE IF EXISTS `zxcms_service`;
@@ -379,6 +353,30 @@ CREATE TABLE `zxcms_slide` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='幻灯片表';
 
 /*Data for the table `zxcms_slide` */
+
+/*Table structure for table `zxcms_user` */
+
+DROP TABLE IF EXISTS `zxcms_user`;
+
+CREATE TABLE `zxcms_user` (
+  `id` mediumint(6) unsigned NOT NULL AUTO_INCREMENT,
+  `username` varchar(20) NOT NULL DEFAULT '',
+  `password` varchar(32) NOT NULL DEFAULT '',
+  `lastloginip` int(10) DEFAULT '0',
+  `lastlogintime` int(10) unsigned DEFAULT '0',
+  `email` varchar(40) DEFAULT '',
+  `mobile` varchar(11) DEFAULT '',
+  `realname` varchar(50) DEFAULT '',
+  `status` tinyint(1) DEFAULT '1' COMMENT '是否有效(-1:删除，0无效,1:有效)',
+  `updatetime` int(10) DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `username` (`username`),
+  KEY `status` (`status`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+/*Data for the table `zxcms_user` */
+
+insert  into `zxcms_user`(`id`,`username`,`password`,`lastloginip`,`lastlogintime`,`email`,`mobile`,`realname`,`status`,`updatetime`) values (1,'admin','4297f44b13955235245b2497399d7a93',0,1492699587,'5552123@qq.com','18888873646','超级管理员',1,1492699587),(2,'zhenxun','9db06bcff9248837f86d1a6bcf41c9e7',2130706433,1476067533,'','18888873646','用户1',1,1476067742),(3,'zhangsan','9db06bcff9248837f86d1a6bcf41c9e7',0,0,'','','用户2',1,0),(4,'guanli1','9db06bcff9248837f86d1a6bcf41c9e7',0,1492698479,'','','管理1',1,1492698479),(5,'guanli2','9db06bcff9248837f86d1a6bcf41c9e7',0,1492698515,'','','管理二',1,1492698515);
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;

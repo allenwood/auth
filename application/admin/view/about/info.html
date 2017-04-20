@@ -1,10 +1,6 @@
 {extend name="admin:base"}
 {block name="body"}
 {extend name="admin:base" /}
-{block name="style"}
-<!-- PAGE LEVEL STYLES -->
-<link href="__STATIC__/admin/assets/css/prettyPhoto.css" rel="stylesheet" />
-{/block}
 {block name="body"}
 <div id="page-wrapper">
     <div id="page-inner">
@@ -19,7 +15,7 @@
         <div class="row">
             <div class="col-md-12">
                 <p>
-                    <a class="btn btn-primary" href="{:url('admin/about/editinfo')}"><i class="glyphicon glyphicon-search"></i>编辑</a>
+                    <a class="btn btn-primary" href="{:url('admin/about/editinfo',['id'=>$info.id])}"><i class="glyphicon glyphicon-search"></i>编辑</a>
                 </p>
             </div>
         </div>
@@ -44,31 +40,33 @@
                                 <tbody class="text-center">
                                 <tr>
                                     <td style="vertical-align:middle;">公司LOGO</td>
-                                    <td style="vertical-align:middle;">Otto</td>
+                                    <td style="vertical-align:middle;">
+                                        <img src="{$info.logo}"/>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td style="vertical-align:middle;">公司名称（中文）</td>
-                                    <td style="vertical-align:middle;">Thornton</td>
+                                    <td style="vertical-align:middle;">{$info.cn_company_name}</td>
                                 </tr>
                                 <tr>
                                     <td style="vertical-align:middle;">公司名称（英文）</td>
-                                    <td style="vertical-align:middle;">Thornton</td>
+                                    <td style="vertical-align:middle;">{$info.en_company_name}</td>
                                 </tr>
                                 <tr>
                                     <td style="vertical-align:middle;">公司简介（中文）</td>
-                                    <td style="vertical-align:middle;">@twitter</td>
+                                    <td style="vertical-align:middle;">{$info.cn_company_desc}</td>
                                 </tr>
                                 <tr>
                                     <td style="vertical-align:middle;">公司简介（英文）</td>
-                                    <td style="vertical-align:middle;">@twitter</td>
+                                    <td style="vertical-align:middle;">{$info.en_company_desc}</td>
                                 </tr>
                                 <tr>
                                     <td style="vertical-align:middle;">业务描述（中文）</td>
-                                    <td style="vertical-align:middle;">@twitter</td>
+                                    <td style="vertical-align:middle;">{$info.cn_service_desc}</td>
                                 </tr>
                                 <tr>
                                     <td style="vertical-align:middle;">业务描述（英文）</td>
-                                    <td style="vertical-align:middle;">@twitter</td>
+                                    <td style="vertical-align:middle;">{$info.en_service_desc}</td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -95,10 +93,4 @@
     </div>
     <!-- /. PAGE INNER  -->
 </div>
-{/block}
-{block name="js"}
-<script src="__STATIC__/admin/assets/js/jquery.mixitup.min.js"></script>
-<script src="__STATIC__/admin/assets/js/jquery.prettyPhoto.js"></script>
-<script src="__STATIC__/admin/assets/js/galleryCustom.js"></script>
-{/block}
 {/block}

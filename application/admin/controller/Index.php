@@ -38,7 +38,8 @@ class Index extends Admin
         $info = $file->move(ROOT_PATH . 'public' . DS . 'uploads');
         if($info){
             $savename=$info->getSaveName();
-            return json(['status'=>true,'msg'=>'上传成功','fileInfo'=>'/static/uploads/'.$savename]);
+            $savename=str_replace("\\",'/',$savename);
+            return json(['status'=>true,'msg'=>'上传成功','fileInfo'=>'/uploads/'.$savename]);
         }else{
             $errmsg=$file->getError();
             return json(['status'=>fale,'msg'=>$errmsg]);

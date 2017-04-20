@@ -30,7 +30,7 @@
         </div>
         <div class="header-right">
             <a href="message-task.html" class="btn btn-info" title="New Message"><b>30 </b><i class="fa fa-envelope-o fa-2x"></i></a>
-            <a href="login.html" class="btn btn-danger" title="Logout"><i class="fa fa-exclamation-circle fa-2x"></i></a>
+            <a href="{:url('admin/entry/logout')}" class="btn btn-danger" title="Logout"><i class="fa fa-exclamation-circle fa-2x"></i></a>
         </div>
     </nav>
     <!-- /. NAV TOP  -->
@@ -39,11 +39,11 @@
             <ul class="nav" id="main-menu">
                 <li>
                     <div class="user-img-div">
-                        <img src="__STATIC__/admin/assets/img/user.png" class="img-thumbnail" />
+                        <!--<img src="__STATIC__/admin/assets/img/user.png" class="img-thumbnail" />-->
                         <div class="inner-text">
-                            Jhon Deo Alex
+                            {$loginuser.username}|{$loginuser.realname}
                             <br />
-                            <small>Last Login : 2 Weeks Ago </small>
+                            <small>上次登录时间 : {$loginuser.lastlogintime|date="Y-m-d H:i:s",###}</small>
                         </div>
                     </div>
                 </li>
@@ -56,12 +56,12 @@
                         <li>
                             <a href="{:url('admin/rbac/user')}"><i class="fa fa-flash "></i>用户管理</a>
                         </li>
-                        <li>
+                        <!--<li>
                             <a href="{:url('admin/rbac/node')}"><i class="fa fa-key "></i>节点管理</a>
                         </li>
                         <li>
                             <a href="{:url('admin/rbac/auth')}"><i class="fa fa-send "></i>授权管理</a>
-                        </li>
+                        </li>-->
                     </ul>
                 </li>
                 <li>
