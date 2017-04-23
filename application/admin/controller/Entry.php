@@ -20,6 +20,10 @@ class Entry extends Controller
      * @author Allen <wudi@wdcloud.cc>
      */
     public function login(){
+        $uid=session('uid');
+        if(!empty($uid)){
+            $this->redirect(url('admin/index/index'));
+        }
         return view('login');
     }
 

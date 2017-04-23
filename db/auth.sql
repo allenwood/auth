@@ -40,7 +40,7 @@ CREATE TABLE `zxcms_about` (
 
 /*Data for the table `zxcms_about` */
 
-insert  into `zxcms_about`(`id`,`logo`,`cn_company_name`,`en_company_name`,`cn_company_desc`,`en_company_desc`,`cn_service_desc`,`en_service_desc`,`cn_other_desc`,`en_other_desc`,`create_time`,`udpate_time`,`create_uid`,`update_uid`) values (1,'/uploads/20170421/66bdf4f92496dd2a9e9a8003335259c7.jpg','青岛丽凯化工有限公司','Qingdao Richkem Co., Ltd.','青岛丽凯化工有限公司','Qingdao Richkem Co., Ltd.，is a high-tech fine chemical enterprise engaged in the R & D, manufacturing , trading of flame retardants and pharmaceutical intermediates.Production site located in Binhai Economic Development Zone in Weifang,Shandong,China,the company has been approved by SGS, ROHS 2002/95/EC, and products have been pre-registered with REACH. \r\nTaking full use of abundant bromine resources, adhering to advanced techniques, strict management, enthusiasm sales team,Richkem has been accepted in international market.We believe “quality, reliable, customer satisfaction, continuous improvement”as principle. Richkem focuses on plastic additives and pharmaceutical intermediates. Current main products are brominated polystyrene,Sb2O3 masterbatch,and flame retardant masterbatch. Production capacity has been brominated polystyrene(2000mt per year, flame retardant masterbatch 2000mt per year).Sales covers Europe,USA,Asia etc. \r\nIn the future, the company will insist on technique improving and innoviation, optimize company structure, attract excellent people ,improve company competition，develop international market. \r\nBased on philosophy of \"reliable cooperation, mutural developing \", we sincerely welcome all cooperations.','青岛丽凯化工有限公司','Qingdao Richkem Co., Ltd.，is a high-tech fine chemical enterprise engaged in the R & D, manufacturing , trading of flame retardants and pharmaceutical intermediates.Production site located in Binhai Economic Development Zone in Weifang,Shandong,China,the company has been approved by SGS, ROHS 2002/95/EC, and products have been pre-registered with REACH. \r\nTaking full use of abundant bromine resources, adhering to advanced techniques, strict management, enthusiasm sales team,Richkem has been accepted in international market.We believe “quality, reliable, customer satisfaction, continuous improvement”as principle. Richkem focuses on plastic additives and pharmaceutical intermediates. Current main products are brominated polystyrene,Sb2O3 masterbatch,and flame retardant masterbatch. Production capacity has been brominated polystyrene(2000mt per year, flame retardant masterbatch 2000mt per year).Sales covers Europe,USA,Asia etc. \r\nIn the future, the company will insist on technique improving and innoviation, optimize company structure, attract excellent people ,improve company competition，develop international market. \r\nBased on philosophy of \"reliable cooperation, mutural developing \", we sincerely welcome all cooperations.','其他描述','其他描述',1492706275,1492706275,1,1);
+insert  into `zxcms_about`(`id`,`logo`,`cn_company_name`,`en_company_name`,`cn_company_desc`,`en_company_desc`,`cn_service_desc`,`en_service_desc`,`cn_other_desc`,`en_other_desc`,`create_time`,`udpate_time`,`create_uid`,`update_uid`) values (1,'/uploads/20170421/168c9bfa4ea4e461feb1caa57102a328.png','青岛丽凯化工有限公司','Qingdao Richkem Co., Ltd.','青岛丽凯化工有限公司','Qingdao Richkem Co., Ltd.，is a high-tech fine chemical enterprise engaged in the R & D, manufacturing , trading of flame retardants and pharmaceutical intermediates.Production site located in Binhai Economic Development Zone in Weifang,Shandong,China,the company has been approved by SGS, ROHS 2002/95/EC, and products have been pre-registered with REACH. \r\nTaking full use of abundant bromine resources, adhering to advanced techniques, strict management, enthusiasm sales team,Richkem has been accepted in international market.We believe “quality, reliable, customer satisfaction, continuous improvement”as principle. Richkem focuses on plastic additives and pharmaceutical intermediates. Current main products are brominated polystyrene,Sb2O3 masterbatch,and flame retardant masterbatch. Production capacity has been brominated polystyrene(2000mt per year, flame retardant masterbatch 2000mt per year).Sales covers Europe,USA,Asia etc. \r\nIn the future, the company will insist on technique improving and innoviation, optimize company structure, attract excellent people ,improve company competition，develop international market. \r\nBased on philosophy of \"reliable cooperation, mutural developing \", we sincerely welcome all cooperations.','青岛丽凯化工有限公司','Qingdao Richkem Co., Ltd.，is a high-tech fine chemical enterprise engaged in the R & D, manufacturing , trading of flame retardants and pharmaceutical intermediates.Production site located in Binhai Economic Development Zone in Weifang,Shandong,China,the company has been approved by SGS, ROHS 2002/95/EC, and products have been pre-registered with REACH. \r\nTaking full use of abundant bromine resources, adhering to advanced techniques, strict management, enthusiasm sales team,Richkem has been accepted in international market.We believe “quality, reliable, customer satisfaction, continuous improvement”as principle. Richkem focuses on plastic additives and pharmaceutical intermediates. Current main products are brominated polystyrene,Sb2O3 masterbatch,and flame retardant masterbatch. Production capacity has been brominated polystyrene(2000mt per year, flame retardant masterbatch 2000mt per year).Sales covers Europe,USA,Asia etc. \r\nIn the future, the company will insist on technique improving and innoviation, optimize company structure, attract excellent people ,improve company competition，develop international market. \r\nBased on philosophy of \"reliable cooperation, mutural developing \", we sincerely welcome all cooperations.','其他描述','其他描述',1492706275,1492738502,1,1);
 
 /*Table structure for table `zxcms_action_log` */
 
@@ -104,9 +104,11 @@ CREATE TABLE `zxcms_clients` (
   `update_uid` int(10) unsigned DEFAULT NULL COMMENT 'update uid',
   `status` tinyint(4) DEFAULT '1' COMMENT '-1 for deleted, 0 for disabled and 1 for enabled',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 /*Data for the table `zxcms_clients` */
+
+insert  into `zxcms_clients`(`id`,`en_name`,`cn_name`,`icon`,`link`,`create_time`,`create_uid`,`update_time`,`update_uid`,`status`) values (1,'asdfasdf','asdfasdf','/uploads/20170421/5a34e0248009273edffea231d27be83f.jpg','http://www.baidu.com',1492745044,1,1492745385,1,1),(2,'中文','中文','/uploads/20170421/04a131cb8007ab9a7c4463ab103e25d4.jpg','http://www.sina.com.cn',1492745543,1,1492745562,1,1);
 
 /*Table structure for table `zxcms_config` */
 
@@ -150,9 +152,11 @@ CREATE TABLE `zxcms_contact` (
   `other` text COMMENT '其它方式',
   `desc` text COMMENT '说明',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 /*Data for the table `zxcms_contact` */
+
+insert  into `zxcms_contact`(`id`,`cn_fact_addr`,`en_fact_addr`,`cn_company_addr`,`en_company_addr`,`phone`,`fax`,`email`,`website`,`other`,`desc`) values (1,'as','sdf','asdf','asdf','asdf','asdf','asdf','sadf','aasdfasdfasdf','asdfasdfasdf');
 
 /*Table structure for table `zxcms_events` */
 
@@ -170,7 +174,7 @@ CREATE TABLE `zxcms_events` (
   `update_uid` int(10) unsigned NOT NULL COMMENT '更新者uid',
   `create_time` int(10) unsigned NOT NULL COMMENT '创建时间',
   `update_time` int(10) unsigned NOT NULL COMMENT '更新时间',
-  `status` tinyint(4) NOT NULL COMMENT '状态：-1 删除，0-禁用，1-发布',
+  `status` tinyint(4) NOT NULL COMMENT '状态：-1 删除，0-禁用，1-发布 2-草稿',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8 COMMENT='平台新闻表';
 
@@ -214,9 +218,11 @@ CREATE TABLE `zxcms_honor` (
   `update_uid` int(11) DEFAULT NULL COMMENT 'update user id',
   `status` tinyint(4) DEFAULT NULL COMMENT '-1 for deleted,0 for disabled and 1 for enabled',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 /*Data for the table `zxcms_honor` */
+
+insert  into `zxcms_honor`(`id`,`en_title`,`cn_title`,`en_desc`,`cn_desc`,`img`,`create_time`,`create_uid`,`update_time`,`update_uid`,`status`) values (1,'asdfasd','sdfas','asdfasdf','asdfasdf','',1492741295,1,1492741295,1,1),(2,'asdfasd','asdfasf','asdfasdfasdf','ffasdfasdf','/uploads/20170421/e62a8cafd6a2cfd3c5a4795720be4822.jpg',1492741314,1,1492743137,1,1);
 
 /*Table structure for table `zxcms_menu` */
 
@@ -372,11 +378,11 @@ CREATE TABLE `zxcms_user` (
   PRIMARY KEY (`id`),
   KEY `username` (`username`),
   KEY `status` (`status`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 /*Data for the table `zxcms_user` */
 
-insert  into `zxcms_user`(`id`,`username`,`password`,`lastloginip`,`lastlogintime`,`email`,`mobile`,`realname`,`status`,`updatetime`) values (1,'admin','4297f44b13955235245b2497399d7a93',0,1492699587,'5552123@qq.com','18888873646','超级管理员',1,1492699587),(2,'zhenxun','9db06bcff9248837f86d1a6bcf41c9e7',2130706433,1476067533,'','18888873646','用户1',1,1476067742),(3,'zhangsan','9db06bcff9248837f86d1a6bcf41c9e7',0,0,'','','用户2',1,0),(4,'guanli1','9db06bcff9248837f86d1a6bcf41c9e7',0,1492698479,'','','管理1',1,1492698479),(5,'guanli2','9db06bcff9248837f86d1a6bcf41c9e7',0,1492698515,'','','管理二',1,1492698515);
+insert  into `zxcms_user`(`id`,`username`,`password`,`lastloginip`,`lastlogintime`,`email`,`mobile`,`realname`,`status`,`updatetime`) values (1,'admin','4297f44b13955235245b2497399d7a93',0,1492831925,'5552123@qq.com','18888873646','超级管理员',1,1492699587),(2,'zhenxun','9db06bcff9248837f86d1a6bcf41c9e7',2130706433,1476067533,'','18888873646','用户1',1,1476067742),(3,'zhangsan','9db06bcff9248837f86d1a6bcf41c9e7',0,0,'','','用户2',1,0),(4,'guanli1','9db06bcff9248837f86d1a6bcf41c9e7',0,1492698479,'','','管理1',1,1492698479),(5,'guanli2','9db06bcff9248837f86d1a6bcf41c9e7',0,1492698515,'','','管理二',1,1492698515),(6,'forks','63ee451939ed580ef3c4b6f0109d1fd0',0,1492734778,'','','allen wood',1,1492734778);
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;

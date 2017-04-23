@@ -17,6 +17,9 @@ class Contact extends Admin
      * @author Allen <wudi@wdcloud.cc>
      */
     public function index(){
+
+        $info=db('contact')->find();
+        $this->assign('info',$info);
         return view('index');
     }
 
@@ -26,6 +29,13 @@ class Contact extends Admin
      * @author Allen <wudi@wdcloud.cc>
      */
     public function edit(){
+        $id=input('id',0);
+        if(empty($id)){
+            $this->error('联系方式信息丢失');
+        }else{
+            $info=db('contact')->where(['id'=>$id])->find();
+            $this->assign('info',$info);
+        }
         return view('edit');
     }
 
@@ -34,7 +44,17 @@ class Contact extends Admin
      * @author Allen <wudi@wdcloud.cc>
      */
     public function update(){
-
+        $data=input();
+        if(empty($data['id'])){
+            $this->error('操作失败：联系方式编号丢失');
+        }else{
+            $re=db('contact')->update($data);
+            if($re!==false){
+                $this->success('操作成功：联系方式信息已更新');
+            }else{
+                $this->error("操作失败");
+            }
+        }
     }
 
     /**

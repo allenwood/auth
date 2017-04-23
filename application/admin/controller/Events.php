@@ -24,6 +24,9 @@ class Events extends Admin
     }
 
     public function edit(){
+        $id=input('id',0);
+        $info=db('events')->where(['id'=>$id])->find();
+        $this->assign('info',$info);
         return view('edit');
     }
 

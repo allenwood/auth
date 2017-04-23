@@ -8,7 +8,7 @@
     <div id="page-inner">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="page-head-line">公司荣誉》<small>新增|更新</small></h1>
+                <h1 class="page-head-line">公司荣誉编辑</h1>
                 <h1 class="page-subhead-line"> </h1>
             </div>
         </div>
@@ -20,30 +20,28 @@
                         编号：1
                     </div>
                     <div class="panel-body">
-                        <form role="form" action="{:url('admin/index/updateslide')}" method="post" enctype="multipart/form-data">
+                        <form role="form" action="{:url('admin/about/updatehonor')}" method="post" enctype="multipart/form-data">
+                            <input type="hidden" name="id" value="{$info.id|default=0}"/>
                             <div class="form-group">
                                 <label class="control-label">图片</label>
                                 <input id="kv-explorer" type="file">
+                                <input type="hidden" name="img" value="{$info.img|default=''}"/>
                             </div>
                             <div class="form-group">
                                 <label class="control-label">名称（中文）</label>
-                                <input type="text" class="form-control" name="cn_title"/>
+                                <input type="text" class="form-control" name="cn_title" value="{$info.cn_title|default=''}"/>
                             </div>
                             <div class="form-group">
                                 <label class="control-label">名称（英文）</label>
-                                <input type="text" class="form-control" name="en_title"/>
+                                <input type="text" class="form-control" name="en_title" value="{$info.en_title|default=''}"/>
                             </div>
                             <div class="form-group">
-                                <label class="control-label">描述（中文）</label>
-                                <input type="text" class="form-control" name="en_title"/>
+                                <label>业务描述（中文）</label>
+                                <textarea class="form-control" rows="10" name="cn_desc">{$info.cn_desc|default=""}</textarea>
                             </div>
                             <div class="form-group">
-                                <label class="control-label">描述（英文）</label>
-                                <input type="text" class="form-control" name="en_title"/>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label">排序编号</label>
-                                <input type="text" class="form-control" name="sort" />
+                                <label>业务描述（英文）</label>
+                                <textarea class="form-control" rows="10" name="en_desc">{$info.en_desc|default=""}</textarea>
                             </div>
                             <button type="submit" class="btn btn-info">保存</button>
                             <a class="btn btn-info" href="{:url('admin/about/clients')}">取消</a>
@@ -66,12 +64,15 @@
             'uploadUrl': "{:url('admin/index/uploadimg')}",
             overwriteInitial: false,
             initialPreviewAsData: true,
-            initialPreview: [],
+            initialPreview: ["{$info.img|default=''}"],
             initialPreviewConfig: []
         }).on("fileuploaded", function(event, data, previewId, index) {
-                    console.log(event);
-            console.log(data);
-                });
+            if(data.response.status===true){
+                $("input[name=img]").val(data.response.fileInfo);
+            }else{
+                alert("文件上传失败");
+            }
+        });
 
     })
 </script>

@@ -16,48 +16,48 @@
                         编号：1
                     </div>
                     <div class="panel-body">
-                        <form role="form" action="{:url('admin/category/udpate')}" method="post">
+                        <form role="form" action="{:url('admin/contact/update')}" method="post">
+                            <input type="hidden" name="id" value="{$info.id|default=0}"/>
                             <div class="form-group">
                                 <label class="control-label">生产地址（中文）</label>
-                                <input type="text" class="form-control" name="cn_title"/>
+                                <input type="text" class="form-control" name="cn_fact_addr" value="{$info.cn_fact_addr|default=''}"/>
                             </div>
                             <div class="form-group">
                                 <label class="control-label">生产地址（英文）</label>
-                                <input type="text" class="form-control" name="en_title"/>
+                                <input type="text" class="form-control" name="en_fact_addr" value="{$info.en_fact_addr}"/>
                             </div>
                             <div class="form-group">
                                 <label class="control-label">公司地址（中文）</label>
-                                <input type="text" class="form-control" name="cn_title"/>
+                                <input type="text" class="form-control" name="cn_company_addr" value="{$info.cn_company_addr}"/>
                             </div>
                             <div class="form-group">
                                 <label class="control-label">电话</label>
-                                <input type="text" class="form-control" name="en_title"/>
+                                <input type="text" class="form-control" name="en_company_addr" value="{$info.en_company_addr}"/>
                             </div>
                             <div class="form-group">
                                 <label class="control-label">传真</label>
-                                <input type="text" class="form-control" name="en_title"/>
+                                <input type="text" class="form-control" name="fax" value="{$info.fax}"/>
                             </div>
                             <div class="form-group">
                                 <label class="control-label">邮件</label>
-                                <input type="text" class="form-control" name="en_title"/>
+                                <input type="text" class="form-control" name="email" value="{$info.email}"/>
                             </div>
                             <div class="form-group">
                                 <label class="control-label">网址</label>
-                                <input type="text" class="form-control" name="en_title"/>
+                                <input type="text" class="form-control" name="website" value="{$info.website}"/>
                             </div>
                             <div class="form-group">
                                 <label>其他联系方式（中文）</label>
-                                <textarea class="form-control" rows="3"></textarea>
+                                <textarea class="form-control" rows="3" name="other">{$info.other|default=""}</textarea>
                             </div>
                             <div class="form-group">
                                 <label>其他联系方式（英文）</label>
-                                <textarea class="form-control" rows="3"></textarea>
+                                <textarea class="form-control" rows="3" name="desc">{$info.desc|default=""}</textarea>
                             </div>
-                            <div class="form-group">
-                                <label class="control-label">排序编号</label>
-                                <input type="text" class="form-control" name="sort" />
+                            <div class="form-group text-center">
+                                <button type="submit" class="btn btn-info">保存</button>
+                                <a type="submit" class="btn btn-warning" href="javascript:history.back(-1);return false;">返回</a>
                             </div>
-                            <button type="submit" class="btn btn-info">保存</button>
                         </form>
                     </div>
                 </div>

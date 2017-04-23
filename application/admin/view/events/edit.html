@@ -6,7 +6,7 @@
     <div id="page-inner">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="page-head-line">编辑新闻》<small>新增|更新</small></h1>
+                <h1 class="page-head-line">编辑新闻</h1>
                 <h1 class="page-subhead-line"> </h1>
             </div>
         </div>
@@ -18,23 +18,24 @@
                         编号：1
                     </div>
                     <div class="panel-body">
-                        <form role="form" action="{:url('admin/index/updateslide')}" method="post" enctype="multipart/form-data">
+                        <form role="form" action="{:url('admin/events/update')}" method="post" enctype="multipart/form-data">
+                            <input type="hidden" name="id" value="{$info.id}"/>
                             <div class="form-group">
                                 <label class="control-label">标题（中文）</label>
-                                <input type="text" class="form-control" name="cn_title"/>
+                                <input type="text" class="form-control" name="cn_title" value="{$info.cn_title}"/>
                             </div>
                             <div class="form-group">
                                 <label class="control-label">标题（英文）</label>
-                                <input type="text" class="form-control" name="en_title"/>
+                                <input type="text" class="form-control" name="en_title" value="{$info.en_title}"/>
                             </div>
                             <div class="form-group">
                                 <label>内容（中文）</label>
                                 <!--<textarea class="form-control" id="editor_cn" rows="3"></textarea>-->
-                                <script id="editor_cn" type="text/plain" style="width:100%;height:500px;" name="content_cn"></script>
+                                <script id="editor_cn" type="text/plain" style="width:100%;height:500px;" name="cn_content">{$info.cn_content}</script>
                             </div>
                             <div class="form-group">
                                 <label>内容（英文）</label>
-                                <script id="editor_en" type="text/plain" style="width:100%;height:500px;" name="content_en"></script>
+                                <script id="editor_en" type="text/plain" style="width:100%;height:500px;" name="cn_content">{$info.en_content}</script>
                             </div>
                             <div class="form-group">
                                 <label>是否置顶</label>
