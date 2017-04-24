@@ -10,7 +10,11 @@
     <div id="page-inner">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="page-head-line">产品列表</h1>
+                <h1 class="page-head-line">
+                    {notempty name="category"}
+                        {$category.cn_title}
+                    {/notempty}产品列表
+                </h1>
                 <h1 class="page-subhead-line"> </h1>
 
             </div>
@@ -48,136 +52,25 @@
                                 </tr>
                                 </thead>
                                 <tbody class="text-center">
+
                                 <tr>
+                                    {notempty name="lists"}
+                                    {volist name="lists" id="list"}
                                     <th><input type="checkbox"/></th>
-                                    <td>1</td>
-                                    <td>Mark</td>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
+                                    <td>{$list.id}</td>
+                                    <td>{$list.casno}</td>
+                                    <td>{$list.cn_title}</td>
+                                    <td>{$list.en_title}</td>
+                                    <td>{$list.cid|get_category_name}</td>
                                     <td>
-                                        <button class="btn btn-xs"><i class="glyphicon glyphicon-headphones"></i>View</button>
-                                        <button class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-search"></i>Edit</button>
-                                        <button class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-home"></i>Delete</button>
+                                        <a class="btn btn-xs" href="#" target="_blank"><i class="glyphicon glyphicon-headphones"></i>View</a>
+                                        <a class="btn btn-primary btn-xs" href="{:url('admin/products/edit',['id'=>$list.id])}"><i class="glyphicon glyphicon-search"></i>Edit</a>
+                                        <a class="btn btn-danger btn-xs" href="{:url('admin/products/del',['id'=>$list.id])}"><i class="glyphicon glyphicon-home"></i>Delete</a>
                                     </td>
+                                    {/volist}
+                                    {/notempty}
                                 </tr>
-                                <tr>
-                                    <th><input type="checkbox"/></th>
-                                    <td>2</td>
-                                    <td>Jacob</td>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                    <td>
-                                        <button class="btn btn-xs"><i class="glyphicon glyphicon-headphones"></i>View</button>
-                                        <button class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-search"></i>Edit</button>
-                                        <button class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-home"></i>Delete</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th><input type="checkbox"/></th>
-                                    <td>3</td>
-                                    <td>Larry</td>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>
-                                        <button class="btn btn-xs"><i class="glyphicon glyphicon-headphones"></i>View</button>
-                                        <button class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-search"></i>Edit</button>
-                                        <button class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-home"></i>Delete</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th><input type="checkbox"/></th>
-                                    <td>3</td>
-                                    <td>Larry</td>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>
-                                        <button class="btn"><i class="glyphicon glyphicon-headphones"></i>View</button>
-                                        <button class="btn btn-primary"><i class="glyphicon glyphicon-search"></i>Edit</button>
-                                        <button class="btn btn-danger"><i class="glyphicon glyphicon-home"></i>Delete</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th><input type="checkbox"/></th>
-                                    <td>3</td>
-                                    <td>Larry</td>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>
-                                        <button class="btn"><i class="glyphicon glyphicon-headphones"></i>View</button>
-                                        <button class="btn btn-primary"><i class="glyphicon glyphicon-search"></i>Edit</button>
-                                        <button class="btn btn-danger"><i class="glyphicon glyphicon-home"></i>Delete</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th><input type="checkbox"/></th>
-                                    <td>3</td>
-                                    <td>Larry</td>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>
-                                        <button class="btn"><i class="glyphicon glyphicon-headphones"></i>View</button>
-                                        <button class="btn btn-primary"><i class="glyphicon glyphicon-search"></i>Edit</button>
-                                        <button class="btn btn-danger"><i class="glyphicon glyphicon-home"></i>Delete</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th><input type="checkbox"/></th>
-                                    <td>3</td>
-                                    <td>Larry</td>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>
-                                        <button class="btn"><i class="glyphicon glyphicon-headphones"></i>View</button>
-                                        <button class="btn btn-primary"><i class="glyphicon glyphicon-search"></i>Edit</button>
-                                        <button class="btn btn-danger"><i class="glyphicon glyphicon-home"></i>Delete</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th><input type="checkbox"/></th>
-                                    <td>3</td>
-                                    <td>Larry</td>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>
-                                        <button class="btn"><i class="glyphicon glyphicon-headphones"></i>View</button>
-                                        <button class="btn btn-primary"><i class="glyphicon glyphicon-search"></i>Edit</button>
-                                        <button class="btn btn-danger"><i class="glyphicon glyphicon-home"></i>Delete</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th><input type="checkbox"/></th>
-                                    <td>3</td>
-                                    <td>Larry</td>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>
-                                        <button class="btn"><i class="glyphicon glyphicon-headphones"></i>View</button>
-                                        <button class="btn btn-primary"><i class="glyphicon glyphicon-search"></i>Edit</button>
-                                        <button class="btn btn-danger"><i class="glyphicon glyphicon-home"></i>Delete</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th><input type="checkbox"/></th>
-                                    <td>3</td>
-                                    <td>Larry</td>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>
-                                        <button class="btn"><i class="glyphicon glyphicon-headphones"></i>View</button>
-                                        <button class="btn btn-primary"><i class="glyphicon glyphicon-search"></i>Edit</button>
-                                        <button class="btn btn-danger"><i class="glyphicon glyphicon-home"></i>Delete</button>
-                                    </td>
-                                </tr>
+
                                 </tbody>
                             </table>
                         </div>
@@ -189,15 +82,7 @@
         <!-- /. ROW  -->
         <div class="row">
             <div class="col-md-12">
-                <ul class="pagination">
-                    <li><a href="#">&laquo;</a></li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">&raquo;</a></li>
-                </ul>
+                {$lists->render()}
             </div>
         </div>
     </div>

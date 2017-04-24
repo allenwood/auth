@@ -17,13 +17,7 @@ class Events extends Admin
         return view('index');
     }
 
-    public function drafts(){
-        return view('drafts');
-    }
 
-    public function recycle(){
-        return view('recycle');
-    }
 
     public function edit(){
         $id=input('id',0);
@@ -67,6 +61,37 @@ class Events extends Admin
     }
 
     /**
+     * delete events
+     * @author Allen <wudi@wdcloud.cc>
+     */
+    public function del(){
+        $id=input('id',0);
+        if(empty($id)){
+            $this->error('操作失败：要删除的新闻编号丢失');
+        }else{
+            $data['update_time']=time();
+            $data['update_uid']=session("uid");
+            $data['status']=-1;
+            $re=db('events')->where(['id'=>$id])->update($data);
+            if($re!==false){
+                $this->success("操作成功：新闻已被删除");
+            }else{
+                $this->error('操作失败');
+            }
+        }
+    }
+
+
+    public function recycle(){
+        return view('recycle');
+    }
+
+    public function drafts(){
+            return view('drafts');
+        }
+
+
+    /**
      * draft save
      * @author Allen <wudi@wdcloud.cc>
      */
@@ -95,8 +120,4 @@ class Events extends Admin
             }
         }
     }*/
-
-    public function del(){
-
-    }
 }
