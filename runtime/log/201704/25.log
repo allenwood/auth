@@ -1,0 +1,227 @@
+[ 2017-04-25T09:28:32+08:00 ] ::1 ::1 GET /
+[ log ] local.auth.com/ [运行时间：0.112904s][吞吐率：8.86req/s] [内存消耗：3,463.30kb] [文件加载：51]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\wamp64\www\0\auth\public/../application/index\lang\en-us.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\wamp64\www\0\auth\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-25T09:28:36+08:00 ] ::1 ::1 GET /admin
+[ log ] local.auth.com/admin [运行时间：0.069895s][吞吐率：14.31req/s] [内存消耗：3,365.98kb] [文件加载：51]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Entry->login[ C:\wamp64\www\0\auth\application\admin\controller\Entry.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'richkem_amdin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\entry\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-25T09:28:36+08:00 ] ::1 ::1 GET /admin
+[ log ] local.auth.com/admin [运行时间：0.058270s][吞吐率：17.16req/s] [内存消耗：3,114.90kb] [文件加载：49]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'think_var=en-us',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Entry->login[ C:\wamp64\www\0\auth\application\admin\controller\Entry.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'richkem_amdin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\entry\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-25T09:28:36+08:00 ] ::1 ::1 GET /captcha.html
+[ log ] local.auth.com/captcha.html [运行时间：0.083419s][吞吐率：11.99req/s] [内存消耗：2,553.02kb] [文件加载：39]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'think_var=en-us; PHPSESSID=al5prjerj75m23moqqrole96h5',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ C:\wamp64\www\0\auth\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-25T09:28:44+08:00 ] ::1 ::1 POST /admin/entry/dologin.html
+[ log ] local.auth.com/admin/entry/dologin.html [运行时间：0.112003s][吞吐率：8.93req/s] [内存消耗：4,681.78kb] [文件加载：60]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'entry',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'content-length' => '44',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://local.auth.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'think_var=en-us; PHPSESSID=al5prjerj75m23moqqrole96h5',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123123',
+  'captcha' => 'hje7z',
+)
+[ info ] [ RUN ] app\admin\controller\Entry->dologin[ C:\wamp64\www\0\auth\application\admin\controller\Entry.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'richkem_amdin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004874s ] mysql:dbname=auth;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_user` [ RunTime:0.003444s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_user` WHERE  `status` = 1  AND `username` = 'admin' LIMIT 1 [ RunTime:0.002297s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010227s ] mysql:dbname=auth;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] UPDATE `zxcms_user`  SET `lastloginip`=0,`lastlogintime`=1493083724  WHERE  `id` = 1 [ RunTime:0.005816s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T09:28:44+08:00 ] ::1 ::1 GET /admin/index/index.html
+[ log ] local.auth.com/admin/index/index.html [运行时间：0.074130s][吞吐率：13.49req/s] [内存消耗：3,393.75kb] [文件加载：52]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'local.auth.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://local.auth.com/admin',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'en-US,en;q=0.8,zh;q=0.6,zh-CN;q=0.4',
+  'cookie' => 'think_var=en-us; PHPSESSID=al5prjerj75m23moqqrole96h5',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'richkem_amdin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\0\auth\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\0\auth\public/../application/admin\view\index\index.html [ array (
+  0 => 'loginuser',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
