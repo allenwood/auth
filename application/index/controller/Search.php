@@ -14,6 +14,7 @@ use app\common\controller\Common;
 class Search extends Common
 {
     public function index(){
+        echo get_l();
         return view('index');
     }
 }

@@ -19,6 +19,8 @@ class Events extends Common
      * @author Allen <wudi@wdcloud.cc>
      */
     public function index(){
+        $lists=db('events')->where(['status'=>1])->order('istop desc,sort asc')->paginate(5);
+        $this->assign('lists',$lists);
         return view('index');
     }
 

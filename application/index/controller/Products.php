@@ -18,6 +18,17 @@ class Products extends Common
     }
 
     public function detail(){
-        return view('detail');
+        $id=input("id");
+        if(empty($id)){
+            return view("noresult");
+        }else{
+            $info=db('product')->where(['id'=>$id,'status'=>1])->find();
+            if(empty($info)){
+                return view("noresult");
+            }else{
+                $this->assign("info",$info);
+                return view('detail');
+            }
+        }
     }
 }

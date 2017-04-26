@@ -41,10 +41,17 @@
                 <ul>
                     <li>
                         <div class="dropdown choose-country">
-                            <a class="#" data-toggle="dropdown" href="#"><img src="__STATIC__/home/img/flags/gb.png" alt="Great Britain"> CN</a>
+                            {eq name="lang_code" value="cn_"}
+                            <a class="#" data-toggle="dropdown" href="#"><img src="__STATIC__/home/img/flags/de.png" alt="Great Britain"> CN</a>
+                            {else/}
+                            <a class="#" data-toggle="dropdown" href="#"><img src="__STATIC__/home/img/flags/us.png" alt="Great Britain"> EN</a>
+                            {/eq}
                             <ul class="dropdown-menu" role="menu">
-                                <li role="menuitem"><a href="?lang=en-us"><img src="__STATIC__/home/img/flags/us.png" alt="United States"> US</a></li>
+                                {eq name="lang_code" value="cn_"}
+                                <li role="menuitem"><a href="?lang=en-us"><img src="__STATIC__/home/img/flags/us.png" alt="United States"> EN</a></li>
+                                {else/}
                                 <li role="menuitem"><a href="?lang=zh-cn"><img src="__STATIC__/home/img/flags/de.png" alt="China"> CN</a></li>
+                                {/eq}
                             </ul>
                         </div>
                     </li>
@@ -64,45 +71,21 @@
                     <a href="{:url('index/products/index')}">{:lang('Product')}</a>
                     <div class="mainmenu-submenu">
                         <div class="mainmenu-submenu-inner">
+                            {volist name="menu" id="menu_cate"}
                             <div>
-                                <a href="{:url('index/products/index')}"><h4>Flame restardant</h4></a>
+                                <a href="{:url('index/products/index')}"><h4>{$menu_cate[get_l()."title"]}</h4></a>
                                 <ul>
-                                    <li><a href="{:url('index/products/detail')}">DBDPE</a></li>
-                                    <li><a href="{:url('index/products/detail')}">BPS</a></li>
-                                    <li><a href="{:url('index/products/detail')}">OBS</a></li>
-                                    <li><a href="{:url('index/products/detail')}">BT-93W</a></li>
-                                    <li><a href="{:url('index/products/detail')}">FR-370</a></li>
-                                    <li><a href="{:url('index/products/detail')}">RK-612(HBCD replacement)</a></li>
-                                    <li><a href="{:url('index/products/detail')}">K-613(HBCD replacement)</a></li>
-                                    <li><a href="{:url('index/products/detail')}">Melamine Cyanurate(MCA)</a></li>
+                                    {volist name="menu_cate.products" id="vo"}
+                                    <li>
+                                        <a href="{:url('index/products/detail',['id'=>$vo.id])}">
+                                            <div>{$vo[get_l()."title"]}</div>
+                                            <div>{$vo["casno"]}</div>
+                                        </a>
+                                    </li>
+                                    {/volist}
                                 </ul>
                             </div>
-                            <div>
-                                <a href="{:url('index/products/index')}"><h4>Masterbatch</h4></a>
-                                <ul>
-                                    <li><a href="{:url('index/products/detail')}">Antimony Masterbatch</a></li>
-                                    <li><a href="{:url('index/products/detail')}">FR Masterbatch</a></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <a href="{:url('index/products/index')}"><h4>Intermediates</h4></a>
-                                <ul>
-                                    <li><a href="{:url('index/products/detail')}">Benzylamine</a></li>
-                                    <li><a href="{:url('index/products/detail')}">Dibenzylamine</a></li>
-                                    <li><a href="{:url('index/products/detail')}">N-Methylbenzylamine</a></li>
-                                    <li><a href="{:url('index/products/detail')}">β-phenylethylamine</a></li>
-                                    <li><a href="{:url('index/products/detail')}">m-Toluic acid</a></li>
-                                    <li><a href="{:url('index/products/detail')}">Furfurylamine</a></li>
-                                    <li><a href="{:url('index/products/detail')}">Boron Trifluoride Acetonitrile</a></li>
-                                    <li><a href="{:url('index/products/detail')}">Boron Trifluoride Etherate</a></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <a href="{:url('index/products/index')}"><h4>Daelim Plavis</h4></a>
-                                <ul>
-                                    <li><a href="{:url('index/products/detail')}">Daelim Plavis (Imported)</a></li>
-                                </ul>
-                            </div>
+                            {/volist}
                         </div><!-- /mainmenu-submenu-inner -->
                     </div><!-- /mainmenu-submenu -->
                 </li>

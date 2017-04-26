@@ -53,23 +53,25 @@
                                 </thead>
                                 <tbody class="text-center">
 
-                                <tr>
                                     {notempty name="lists"}
                                     {volist name="lists" id="list"}
-                                    <th><input type="checkbox"/></th>
+                                    <tr>
+
+                                    <td><input type="checkbox"/></td>
                                     <td>{$list.id}</td>
                                     <td>{$list.casno}</td>
                                     <td>{$list.cn_title}</td>
                                     <td>{$list.en_title}</td>
-                                    <td>{$list.cid|get_category_name}</td>
+                                    <td><a href="{:url('admin/products/index',['cid'=>$list.cid])}" target="_blank">{$list.cid|get_category_name}</a></td>
                                     <td>
                                         <a class="btn btn-xs" href="#" target="_blank"><i class="glyphicon glyphicon-headphones"></i>View</a>
                                         <a class="btn btn-primary btn-xs" href="{:url('admin/products/edit',['id'=>$list.id])}"><i class="glyphicon glyphicon-search"></i>Edit</a>
                                         <a class="btn btn-danger btn-xs" href="{:url('admin/products/del',['id'=>$list.id])}"><i class="glyphicon glyphicon-home"></i>Delete</a>
                                     </td>
+                                    </tr>
+
                                     {/volist}
                                     {/notempty}
-                                </tr>
 
                                 </tbody>
                             </table>

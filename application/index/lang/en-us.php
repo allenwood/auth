@@ -13,4 +13,11 @@ return [
     'Product'=>'Products',
     'Contact'=>'Contact Us',
     'Search'=>'Search',
+    'read_more'=>"Read More",
+    'product_category'=>"Products Categories",
+    'focus'=>'FOCUS',
+    'concentrate'=>'CONCENTRATE',
+    'specialized'=>'SPECIALIZED',
+    'products'=>"Products",
+    'our_clients'=>'Our Clients'
 ];
