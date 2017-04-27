@@ -110,7 +110,7 @@
                         </div>
                         <!-- Buy Button -->
                         <div class="actions">
-                            <a href="page-product-details.html" class="btn btn-small"><i class="icon-shopping-cart icon-white"></i>{:lang('read_more')}</a>
+                            <a href="{:url('index/products/detail',['id'=>$product.id])}" class="btn btn-small"><i class="icon-shopping-cart icon-white"></i>{:lang('read_more')}</a>
                         </div>
                     </div>
                     {/volist}
@@ -160,7 +160,7 @@
 <!-- Our Clients -->
 <div class="section">
     <div class="container">
-        <h2>Our Clients</h2>
+        <h2>{:lang('our_clients')}</h2>
         <div class="clients-logo-wrapper text-center row">
             {volist name="clients" id="client"}
             <div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="{$client.icon}" alt="{$client[get_l().'name']}"></a></div>

@@ -30,6 +30,13 @@ class Events extends Common
      * @author Allen <wudi@wdcloud.cc>
      */
     public function detail(){
+        $id=input("id",0);
+        if(empty($id)){
+            return view("tpl:noresult");
+        }else{
+            $info=db('events')->where(["status"=>1,'id'=>$id])->find();
+            $this->assign('info',$info);
+        }
         return view('detail');
     }
 }

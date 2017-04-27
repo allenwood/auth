@@ -20,14 +20,16 @@
                     <tr>
                         <td>
                             <div class="event-date">
-                                <div class="event-day">16</div>
+                                <div class="event-day">{$list.create_time|date="d",###}</div>
                                 <div class="event-month">MAR</div>
+                                <div class="event-month">{$list.create_time|date="Y",###}</div>
                             </div>
                         </td>
                         <td>
-                            {$list[get_l()."title"]}
+                            <a href="{:url('index/events/detail',['id'=>$list.id])}">{$list[get_l()."title"]}</a>
                         </td>
-                        <td><a href="{:url('index/events/detail')}" class="btn btn-grey btn-sm event-more">{:lang('read more')}</a></td>
+                        <td>{$list.create_time|date="H:i:s",###}</td>
+                        <td><a href="{:url('index/events/detail',['id'=>$list.id])}" class="btn btn-grey btn-sm event-more">{:lang('read_more')}</a></td>
                     </tr>
                     {/volist}
                 </table>

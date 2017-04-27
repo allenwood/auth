@@ -73,7 +73,7 @@
                         <div class="mainmenu-submenu-inner">
                             {volist name="menu" id="menu_cate"}
                             <div>
-                                <a href="{:url('index/products/index')}"><h4>{$menu_cate[get_l()."title"]}</h4></a>
+                                <a href="{:url('index/products/index',['cid'=>$menu_cate.id])}"><h4>{$menu_cate[get_l()."title"]}</h4></a>
                                 <ul>
                                     {volist name="menu_cate.products" id="vo"}
                                     <li>
@@ -119,23 +119,21 @@
     <div class="container">
         <div class="row">
             <div class="col-footer col-md-3 col-xs-6">
-                <h3>Navigate</h3>
+                <h3>{:lang('navigate')}</h3>
                 <ul class="no-list-style footer-navigate-section">
-                    <li><a href="page-blog-posts.html">Home</a></li>
-                    <li><a href="page-portfolio-3-columns-2.html">About Us</a></li>
-                    <li><a href="{:url('index/products/index')}">Products</a></li>
-                    <li><a href="page-services-3-columns.html">Events</a></li>
-                    <li><a href="page-pricing.html">Contact Us</a></li>
+                    <li><a href="{:url('index/index/index')}">{:lang('Home')}</a></li>
+                    <li><a href="{:url('index/about/index')}">{:lang('About')}</a></li>
+                    <li><a href="{:url('index/products/index')}">{:lang('Product')}</a></li>
+                    <li><a href="{:url('index/events/index')}">{:lang('Events')}</a></li>
+                    <li><a href="{:url('index/contact/index')}">{:lang('Contact')}</a></li>
                 </ul>
             </div>
             <div class="col-footer col-md-3 col-xs-6">
-                <h3>Products</h3>
+                <h3>{:lang('product_category')}</h3>
                 <ul class="no-list-style footer-navigate-section">
-                    <li><a href="page-blog-posts.html">Home</a></li>
-                    <li><a href="page-portfolio-3-columns-2.html">About Us</a></li>
-                    <li><a href="{:url('index/products/index')}">Products</a></li>
-                    <li><a href="page-services-3-columns.html">Events</a></li>
-                    <li><a href="page-pricing.html">Contact Us</a></li>
+                    {volist name="menu" id="nav_cate"}
+                    <li><a href="{'index/products/index',['cid'=>$nav_cate.id]}">{$nav_cate[get_l()."title"]}</a></li>
+                    {/volist}
                 </ul>
             </div>
 
@@ -143,22 +141,21 @@
             <div class="col-footer col-md-3 col-xs-6">
                 <h3>Latest News</h3>
                 <ul class="no-list-style footer-navigate-section">
-                    <li><a href="page-blog-posts.html">Home</a></li>
-                    <li><a href="page-portfolio-3-columns-2.html">About Us</a></li>
+                    <li><a href="{:url('index/index/index')}">Home</a></li>
+                    <li><a href="{:url('index/about/index')}">About Us</a></li>
                     <li><a href="{:url('index/products/index')}">Products</a></li>
-                    <li><a href="page-services-3-columns.html">Events</a></li>
-                    <li><a href="page-pricing.html">Contact Us</a></li>
+                    <li><a href="{:url('index/events/index')}">Events</a></li>
+                    <li><a href="{:url('index/contact/index')}">Contact Us</a></li>
                 </ul>
             </div>
 
             <div class="col-footer col-md-3 col-xs-6">
                 <h3>Contact Us</h3>
-                <p class="contact-us-details">
-                    <b>Address:</b> 123 Fake Street, LN1 2ST, London, United Kingdom<br/>
-                    <b>Phone:</b> +44 123 654321<br/>
-                    <b>Fax:</b> +44 123 654321<br/>
-                    <b>Email:</b> <a href="mailto:getintoutch@yourcompanydomain.com">getintoutch@yourcompanydomain.com</a>
-                </p>
+                <b>Address:</b> {$contacts[get_l()."company_addr"]}<br/>
+                <b>Phone:</b>{$contacts.phone}<br/>
+                <b>Fax:</b> {$contacts.fax}<br/>
+                <b>Email:</b> <a href="mailto:getintoutch@yourcompanydomain.com">{$contacts.email}</a><br/>
+                <b>Website:</b> <a href="mailto:getintoutch@yourcompanydomain.com">{$contacts.website}</a>
             </div>
         </div>
         <div class="row">

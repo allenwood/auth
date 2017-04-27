@@ -22,6 +22,9 @@ class Common extends Controller
             $menu_cate[$k]["products"]=db("product")->where(["cid"=>$v["id"],'status'=>1])->order('istop desc,top_sort asc')->select();
         }
 
+        $contacts=db('contact')->find();
+        $this->assign('contacts',$contacts);
+
         $this->assign('menu',$menu_cate);
         $this->assign('lang_code',$langCode);
     }

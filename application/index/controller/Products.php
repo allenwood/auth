@@ -14,6 +14,14 @@ use app\common\controller\Common;
 class Products extends Common
 {
     public function index(){
+        $cid=input("cid",0);
+        if(!empty($cid)){
+            $map["cid"]=$cid;
+        }
+        $map["status"]=1;
+        $lists=db("product")->where($map)->order("istop desc,top_sort asc,create_time desc")->paginate(6);
+        $this->assign('cid',$cid);
+        $this->assign('lists',$lists);
         return view('index');
     }
 
@@ -26,9 +34,19 @@ class Products extends Common
             if(empty($info)){
                 return view("noresult");
             }else{
+                $info["spec"]=$this->spec_process($info[get_l()."spec"]);
                 $this->assign("info",$info);
                 return view('detail');
             }
         }
+    }
+
+    public function spec_process($data){
+        $stepOne=explode("\n",$data);
+        $stepTwo=[];
+        foreach($stepOne as $key => $value){
+            $stepTwo[]=explode("|",$value);
+        }
+        return $stepTwo;
     }
 }

@@ -19,5 +19,8 @@ return [
     'concentrate'=>'CONCENTRATE',
     'specialized'=>'SPECIALIZED',
     'products'=>"Products",
-    'our_clients'=>'Our Clients'
+    'our_clients'=>'Our Clients',
+    'product_detail'=>'Product Details',
+    'structural_formula'=>"Structural Formula",
+    "navigate"=>"Navigate",
 ];

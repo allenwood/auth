@@ -18,5 +18,8 @@ return [
     'concentrate'=>'专业',
     'specialized'=>'专注',
     'products'=>"产品",
-    'our_clients'=>"合作伙伴"
+    'our_clients'=>"合作伙伴",
+    'product_detail'=>'产品详情',
+    'structural_formula'=>"分子结构式",
+    "navigate"=>"网站地图",
 ];
