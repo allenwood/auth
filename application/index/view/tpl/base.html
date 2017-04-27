@@ -42,7 +42,7 @@
                     <li>
                         <div class="dropdown choose-country">
                             {eq name="lang_code" value="cn_"}
-                            <a class="#" data-toggle="dropdown" href="#"><img src="__STATIC__/home/img/flags/de.png" alt="Great Britain"> CN</a>
+                            <a class="#" data-toggle="dropdown" href="#"><img src="__STATIC__/home/img/flags/cn.png" alt="Great Britain"> CN</a>
                             {else/}
                             <a class="#" data-toggle="dropdown" href="#"><img src="__STATIC__/home/img/flags/us.png" alt="Great Britain"> EN</a>
                             {/eq}
@@ -50,7 +50,7 @@
                                 {eq name="lang_code" value="cn_"}
                                 <li role="menuitem"><a href="?lang=en-us"><img src="__STATIC__/home/img/flags/us.png" alt="United States"> EN</a></li>
                                 {else/}
-                                <li role="menuitem"><a href="?lang=zh-cn"><img src="__STATIC__/home/img/flags/de.png" alt="China"> CN</a></li>
+                                <li role="menuitem"><a href="?lang=zh-cn"><img src="__STATIC__/home/img/flags/cn.png" alt="China"> CN</a></li>
                                 {/eq}
                             </ul>
                         </div>
@@ -139,7 +139,7 @@
 
 
             <div class="col-footer col-md-3 col-xs-6">
-                <h3>Latest News</h3>
+                <h3>{:lang('latest_news')}</h3>
                 <ul class="no-list-style footer-navigate-section">
                     <li><a href="{:url('index/index/index')}">Home</a></li>
                     <li><a href="{:url('index/about/index')}">About Us</a></li>
@@ -150,17 +150,22 @@
             </div>
 
             <div class="col-footer col-md-3 col-xs-6">
-                <h3>Contact Us</h3>
-                <b>Address:</b> {$contacts[get_l()."company_addr"]}<br/>
-                <b>Phone:</b>{$contacts.phone}<br/>
-                <b>Fax:</b> {$contacts.fax}<br/>
-                <b>Email:</b> <a href="mailto:getintoutch@yourcompanydomain.com">{$contacts.email}</a><br/>
-                <b>Website:</b> <a href="mailto:getintoutch@yourcompanydomain.com">{$contacts.website}</a>
+                <h3>{:lang('Contact')}</h3>
+                <b>{:lang('addr')}:</b> {$contacts[get_l()."company_addr"]}<br/>
+                <b>{:lang('phone')}:</b>{$contacts.phone}<br/>
+                <b>{:lang('fax')}:</b> {$contacts.fax}<br/>
+                <b>{:lang('email')}:</b> <a href="mailto:getintoutch@yourcompanydomain.com">{$contacts.email}</a><br/>
+                <b>{:lang('website')}:</b> <a href="mailto:getintoutch@yourcompanydomain.com">{$contacts.website}</a>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div class="footer-copyright">Copyright &copy; 2015.Company name All rights reserved.</div>
+                <div class="footer-copyright">
+                    <div>
+                    copyright © 2012 Qingdao RichkemCo.,Ltd.All rights reserved
+                    </div>
+                    <div>鲁ICP备12012892号-1</div>
+                </div>
             </div>
         </div>
     </div>

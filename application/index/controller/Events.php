@@ -37,6 +37,9 @@ class Events extends Common
             $info=db('events')->where(["status"=>1,'id'=>$id])->find();
             $this->assign('info',$info);
         }
+
+        $recentPost=db('events')->where(['status'=>1])->order('create_time desc')->limit(10)->select();
+        $this->assign('recent_post',$recentPost);
         return view('detail');
     }
 }

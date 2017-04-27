@@ -5,17 +5,36 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Intermediates</h1>
+                <h1>{:lang('product_list')}</h1>
             </div>
         </div>
     </div>
 </div>
 
-
-
 <div class="eshop-section section">
     <div class="container">
-        <h2>Listing With No Colors Information</h2>
+        <h2>
+            {empty name="cid"}
+                {:lang('all_products')}
+            {else/}
+            {:lang('product_category')} : {$cateinfo[get_l()."title"]}
+            {/empty}
+        </h2>
+        <div>
+        <div class="row text-right">
+            <nav aria-label="...">
+                <ul class="pagination">
+                    {volist name="menu" id="product_menu"}
+                    {eq name="product_menu.id" value="$cid"}
+                    <li class="active"><a href="{:url('index/products/index',['cid'=>$product_menu.id])}">{$product_menu[get_l().'title']}<span class="sr-only">(current)</span></a></li>
+                    {else /}
+                    <li><a href="{:url('index/products/index',['cid'=>$product_menu.id])}">{$product_menu[get_l().'title']}<span class="sr-only">(current)</span></a></li>
+                    {/eq}
+                    {/volist}
+                </ul>
+            </nav>
+        </div>
+        </div>
         <div class="row">
             {volist name="lists" id="list"}
             <div class="col-sm-4">

@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h1>Contact Us</h1>
+                <h1>{:lang('Contact')}</h1>
             </div>
         </div>
     </div>
@@ -16,38 +16,38 @@
         <div class="row">
             <div class="col-sm-7">
                 <!-- Map -->
-                <div id="contact-us-map">
-
+                <div>
+                    <img class="img-responsive img-rounded table-bordered" id="contact-us-map1" src="__STATIC__/home/img/contactus.png"/>
                 </div>
                 <!-- End Map -->
                 <!-- Contact Info -->
                 <p class="contact-us-details">
-                    <b>Address:</b> {$contacts[get_l()."company_addr"]}<br/>
-                    <b>Phone:</b> {$contacts.phone}<br/>
-                    <b>Fax:</b> {$contacts.fax}<br/>
-                    <b>Email:</b> <a href="mailto:richkem@richkem.com">{$contacts.email}</a><br/>
-                    <b>Website:</b> <a href="http://www.richkem.com">{$contacts.website}</a>
+                    <b>{:lang('addr')}:</b> {$contacts[get_l()."company_addr"]}<br/>
+                    <b>{:lang('phone')}:</b> {$contacts.phone}<br/>
+                    <b>{:lang('fax')}:</b> {$contacts.fax}<br/>
+                    <b>{:lang('email')}:</b> <a href="mailto:richkem@richkem.com">{$contacts.email}</a><br/>
+                    <b>{:lang('website')}:</b> <a href="http://www.richkem.com">{$contacts.website}</a>
                 </p>
                 <!-- End Contact Info -->
             </div>
             <div class="col-sm-5">
                 <!-- Contact Form -->
-                <h3>Send Us a Message</h3>
+                <h3>{:lang('send_us_msg')}</h3>
                 <div class="contact-form-wrapper">
-                    <form class="form-horizontal" role="form" action="page-coming-soon.html">
+                    <form class="form-horizontal" role="form" action="{:url('index/contact/msg')}">
                         <div class="form-group">
-                            <label for="Name" class="col-sm-3 control-label"><b>Your name</b></label>
+                            <label for="Name" class="col-sm-3 control-label"><b>{:lang('your_name')}</b></label>
                             <div class="col-sm-9">
-                                <input class="form-control" id="Name" type="text" placeholder="">
+                                <input class="form-control" id="name" name="name" type="text" placeholder="" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="contact-email" class="col-sm-3 control-label"><b>Your Email</b></label>
+                            <label for="email" class="col-sm-3 control-label"><b>{:lang('your_email')}</b></label>
                             <div class="col-sm-9">
-                                <input class="form-control" id="contact-email" type="text" placeholder="">
+                                <input class="form-control" id="email" name="email" type="text" placeholder="" required>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <!--<div class="form-group">
                             <label for="contact-message" class="col-sm-3 control-label"><b>Select Topic</b></label>
                             <div class="col-sm-9">
                                 <select class="form-control" id="prependedInput">
@@ -57,16 +57,16 @@
                                     <option>Orders</option>
                                 </select>
                             </div>
-                        </div>
+                        </div>-->
                         <div class="form-group">
-                            <label for="contact-message" class="col-sm-3 control-label"><b>Message</b></label>
+                            <label for="content" class="col-sm-3 control-label"><b>{:lang('message')}</b></label>
                             <div class="col-sm-9">
-                                <textarea class="form-control" rows="5" id="contact-message"></textarea>
+                                <textarea class="form-control" rows="15" id="content" name="content"></textarea>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <button type="submit" class="btn pull-right">Send</button>
+                                <button type="submit" class="btn pull-right">{:lang('send')}</button>
                             </div>
                         </div>
                     </form>

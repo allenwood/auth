@@ -34,7 +34,7 @@
                 <div>
                     <b>CAS NO:</b> {$info["casno"]}
                 </div>
-                <h5>Quick Overview</h5>
+                <h5>{:lang('quick_view')}</h5>
                 <p>
                     Morbi eleifend congue elit nec sagittis. Praesent aliquam lobortis tellus, nec consequat massa ornare vitae. Ut fermentum justo vel venenatis eleifend. Fusce id magna eros.
                 </p>
@@ -58,13 +58,13 @@
                 <div class="tabbable">
                     <!-- Tabs -->
                     <ul class="nav nav-tabs product-details-nav">
-                        <li class="active"><a href="#tab1" data-toggle="tab">Description</a></li>
+                        <li class="active"><a href="#tab1" data-toggle="tab">{:lang('product_intro')}</a></li>
                         <!--<li><a href="#tab2" data-toggle="tab">Specification</a></li>-->
                     </ul>
                     <!-- Tab Content (Full Description) -->
                     <div class="tab-content product-detail-info">
                         <!-- Tab Content (Specification) -->
-                        <h4>Specification</h4>
+                        <h4><b>{:lang('specification')}</b></h4>
                         <div class="tab-pane active" id="tab2">
                             <table>
                                 {volist name="info.spec" id="vo"}
@@ -77,14 +77,13 @@
                                 {/volist}
                             </table>
                         </div>
+                        <br/>
                         <div class="tab-pane active" id="tab1">
-                            <h4>Product Description</h4>
+                            <h4>{:lang('product_description')}</h4>
                             <p>
                                 {$info[get_l()."desc"]}
                             </p>
-                            <h4>Product Highlights</h4>
                             {$info[get_l()."other"]}
-                            <h4>Usage Information</h4>
                             <p>
                                 Donec hendrerit massa metus, a ultrices elit iaculis eu. Pellentesque ullamcorper augue lacus. Phasellus et est quis diam iaculis fringilla id nec sapien. Sed tempor ornare felis, non vulputate dolor. Etiam ornare diam vitae ligula malesuada tempor. Vestibulum nec odio vel libero ullamcorper euismod et in sapien. Suspendisse potenti.
                             </p>

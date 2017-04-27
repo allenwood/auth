@@ -76,7 +76,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="calltoaction-wrapper">
-                    <h3>Welcome to consult</h3> <a href="#" class="btn btn-orange">Recent Event</a>
+                    <h3>{:lang('welcome_consult')}</h3> <a href="{:url('index/contact/index')}" class="btn btn-orange">{:lang('Contact')}</a>
                 </div>
             </div>
         </div>
@@ -126,7 +126,7 @@
         <div class="row">
             <!-- Featured News -->
             <div class="col-sm-6 featured-news">
-                <h2>Featured News</h2>
+                <h2>{:lang('featured_news')}</h2>
                 {volist name="topevents" id="vo"}
                 <div class="row">
                     <!--<div class="col-xs-4"><a href="page-blog-post-right-sidebar.html"><img src="__STATIC__/home/img/news1.jpg" alt="Post Title"></a></div>-->
@@ -141,7 +141,7 @@
             <!-- End Featured News -->
             <!-- Latest News -->
             <div class="col-sm-6 latest-news">
-                <h2>Latest News</h2>
+                <h2>{:lang('latest_news')}</h2>
                 {volist name="latest" id="l"}
                 <div class="row">
                     <div class="col-sm-12">
